@@ -4,25 +4,6 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    
-        {
-            "name": "Unity-Remote",
-            "type": "lua",
-            "request": "attach",
-            "runtimeType": "Unity",
-            "localRoot": "${workspaceRoot}",
-            "port": 7003,
-            "printType": 1
-        },
-        {
-            "name": "Cocos-Remote",
-            "type": "lua",
-            "request": "attach",
-            "runtimeType": "Cocos2",
-            "localRoot": "${workspaceRoot}",
-            "port": 7003,
-            "printType": 1
-        },
         {
             "name": "Cocos-Launch",
             "type": "lua",
@@ -36,16 +17,6 @@
             ],
             "port": 7003,
             "exePath": "${workspaceRoot}/runtime/win32/cocos2d-x-3D.exe",
-            "printType": 1
-        },
-        {
-            "name": "Lua51-Launch",
-            "type": "lua",
-            "request": "launch",
-            "runtimeType": "Lua51",
-            "localRoot": "${workspaceRoot}",
-            "mainFile": "main",
-            "port": 7003,
             "printType": 1
         }
     ]
