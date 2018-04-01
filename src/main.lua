@@ -3,6 +3,7 @@ cc.FileUtils:getInstance():setPopupNotify(false)
 
 require "config"
 require "cocos.init"
+require "utils.init"
 
 local function main()
     require("app.MyApp"):create():run()
