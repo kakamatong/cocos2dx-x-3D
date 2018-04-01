@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:70-96
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+		ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+		ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:1-7:12
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:3:5-5:19
+	android:allowBackup
+		ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml:3:18-44
+uses-sdk
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+		ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+		ADDED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml
+		INJECTED from D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\platform\android\libcocos2dx\AndroidManifest.xml

@@ -1,0 +1,13 @@
+<Solution>
+  <PropertyGroup Name="Lobby" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="Lobby">
+          <Image Name="HelloWorld.png" />
+          <Project Name="MainScene.csd" Type="Scene" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

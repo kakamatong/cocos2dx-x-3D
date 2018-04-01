@@ -1,0 +1,316 @@
+﻿  复制了 2 个文件
+  auxiliar.c
+  buffer.c
+  except.c
+  inet.c
+  io.c
+  luasocket.c
+  luasocket_scripts.c
+  mime.c
+  options.c
+  select.c
+..\..\..\..\external\lua\luasocket\inet.c(254): warning C4133: “函数”: 从“WCHAR *”到“const char *”的类型不兼容
+..\..\..\..\external\lua\luasocket\inet.c(288): warning C4133: “函数”: 从“WCHAR *”到“const char *”的类型不兼容
+  tcp.c
+  timeout.c
+  udp.c
+  wsocket.c
+  tolua_event.c
+  tolua_is.c
+..\..\..\..\external\lua\luasocket\udp.c(181): warning C4133: “函数”: 从“WCHAR *”到“const char *”的类型不兼容
+..\..\..\..\external\lua\luasocket\udp.c(251): warning C4133: “函数”: 从“WCHAR *”到“const char *”的类型不兼容
+  tolua_map.c
+..\..\..\..\external\lua\luasocket\wsocket.c(431): warning C4133: “return”: 从“WCHAR *”到“const char *”的类型不兼容
+  tolua_push.c
+  tolua_to.c
+  lua_extensions.c
+  xxtea.cpp
+  lua_cocos2dx_3d_auto.cpp
+  lua_cocos2dx_audioengine_auto.cpp
+  lua_cocos2dx_auto.cpp
+  lua_cocos2dx_cocosbuilder_auto.cpp
+  lua_cocos2dx_cocosdenshion_auto.cpp
+  lua_cocos2dx_csloader_auto.cpp
+  lua_cocos2dx_experimental_auto.cpp
+..\auto\lua_cocos2dx_3d_auto.cpp(90): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(196): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(201): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(218): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(362): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(371): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(387): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(536): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(673): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_3d_auto.cpp(5377): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_3d_auto.cpp(5773): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_3d_auto.cpp(6408): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_3d_auto.cpp(6506): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_3d_auto.cpp(6557): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_3d_auto.cpp(6611): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(13552): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(13594): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(17860): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(21418): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(21439): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(22293): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(22440): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(22491): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(28202): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(28314): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(30816): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(35918): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(84973): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(86107): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_auto.cpp(86136): warning C4083: 应输入“(”；找到标识符“NO”
+  lua_cocos2dx_experimental_video_auto.cpp
+..\auto\lua_cocos2dx_auto.cpp(103935): warning C4083: 应输入“(”；找到标识符“NO”
+  lua_cocos2dx_experimental_webview_auto.cpp
+  lua_cocos2dx_extension_auto.cpp
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.cpp(6618): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_3d_auto.cpp(6415): warning C4700: 使用了未初始化的局部变量“arg1”
+  lua_cocos2dx_navmesh_auto.cpp
+  lua_cocos2dx_physics3d_auto.cpp
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(17872): warning C4700: 使用了未初始化的局部变量“arg2”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(21422): warning C4700: 使用了未初始化的局部变量“arg2”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(21443): warning C4700: 使用了未初始化的局部变量“arg2”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(22302): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(22447): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(30823): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_auto.cpp(35925): warning C4700: 使用了未初始化的局部变量“arg1”
+..\auto\lua_cocos2dx_navmesh_auto.cpp(521): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_navmesh_auto.cpp(1190): warning C4083: 应输入“(”；找到标识符“NO”
+  lua_cocos2dx_physics_auto.cpp
+..\auto\lua_cocos2dx_extension_auto.cpp(16260): warning C4083: 应输入“(”；找到标识符“NO”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_navmesh_auto.cpp(1197): warning C4700: 使用了未初始化的局部变量“arg0”
+  lua_cocos2dx_spine_auto.cpp
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\external\bullet\include\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: “btDbvtBroadphase”: 类型名称以前使用“class”现在使用的是“struct” (编译源文件 ..\auto\lua_cocos2dx_physics3d_auto.cpp)
+  d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\external\bullet\include\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): note: 参见“btDbvtBroadphase”的声明 (编译源文件 ..\auto\lua_cocos2dx_physics3d_auto.cpp)
+..\auto\lua_cocos2dx_physics3d_auto.cpp(591): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_physics3d_auto.cpp(646): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_physics3d_auto.cpp(934): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_physics3d_auto.cpp(2140): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_physics3d_auto.cpp(5179): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_physics3d_auto.cpp(5554): warning C4083: 应输入“(”；找到标识符“NO”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_extension_auto.cpp(16267): warning C4700: 使用了未初始化的局部变量“arg0”
+  lua_cocos2dx_studio_auto.cpp
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp(598): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp(2147): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_physics3d_auto.cpp(5561): warning C4700: 使用了未初始化的局部变量“arg0”
+  lua_cocos2dx_ui_auto.cpp
+..\auto\lua_cocos2dx_physics_auto.cpp(4953): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(180): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(196): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(333): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(350): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(485): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(502): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(950): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1020): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1037): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1104): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1120): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1155): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1175): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1314): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1378): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1422): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1536): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1648): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(1760): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(2088): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(2226): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(2243): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(2354): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_spine_auto.cpp(2371): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(4653): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(6568): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(6759): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(7807): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(8423): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(8470): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(8651): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(8748): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(9141): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(11216): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(13459): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(13938): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(20063): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(20207): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(20679): warning C4083: 应输入“(”；找到标识符“NO”
+  lua_cocos2dx_3d_manual.cpp
+..\auto\lua_cocos2dx_ui_auto.cpp(20934): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(21028): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(24107): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(32886): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(33125): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(33567): warning C4083: 应输入“(”；找到标识符“NO”
+..\auto\lua_cocos2dx_ui_auto.cpp(33822): warning C4083: 应输入“(”；找到标识符“NO”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(187): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(205): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(337): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(358): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(489): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(510): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1023): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1043): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1327): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1108): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1128): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1159): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1183): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1435): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1549): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1661): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(1773): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(2101): warning C4700: 使用了未初始化的局部变量“arg0”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(2229): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(2249): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(2357): warning C4700: 使用了未初始化的局部变量“arg1”
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\cocos\scripting\lua-bindings\auto\lua_cocos2dx_spine_auto.cpp(2377): warning C4700: 使用了未初始化的局部变量“arg1”
+  lua_cocos2dx_audioengine_manual.cpp
+  CCLuaBridge.cpp
+..\manual\3d\lua_cocos2dx_3d_manual.cpp(211): warning C4996: 'lua_cocos2dx_3d_Sprite3D_setBlendFunc01': 被声明为已否决
+  ..\manual\3d\lua_cocos2dx_3d_manual.cpp(34): note: 参见“lua_cocos2dx_3d_Sprite3D_setBlendFunc01”的声明
+..\manual\3d\lua_cocos2dx_3d_manual.cpp(1852): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\3d\lua_cocos2dx_3d_manual.cpp(1871): warning C4018: “<=”: 有符号/无符号不匹配
+  CCLuaEngine.cpp
+  CCLuaStack.cpp
+  CCLuaValue.cpp
+  Cocos2dxLuaLoader.cpp
+  LuaOpengl.cpp
+  LuaScriptHandlerMgr.cpp
+  CCComponentLua.cpp
+..\manual\cocos2d\LuaOpengl.cpp(4435): warning C4996: 'cocos2d::DrawPrimitives::drawPoint': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(100): note: 参见“cocos2d::DrawPrimitives::drawPoint”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4470): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\LuaOpengl.cpp(4488): warning C4996: 'cocos2d::DrawPrimitives::drawPoints': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(108): note: 参见“cocos2d::DrawPrimitives::drawPoints”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4523): warning C4996: 'cocos2d::DrawPrimitives::drawLine': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(115): note: 参见“cocos2d::DrawPrimitives::drawLine”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4556): warning C4996: 'cocos2d::DrawPrimitives::drawRect': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(123): note: 参见“cocos2d::DrawPrimitives::drawRect”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4596): warning C4996: 'cocos2d::DrawPrimitives::drawSolidRect': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(133): note: 参见“cocos2d::DrawPrimitives::drawSolidRect”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4632): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\LuaOpengl.cpp(4650): warning C4996: 'cocos2d::DrawPrimitives::drawPoly': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(142): note: 参见“cocos2d::DrawPrimitives::drawPoly”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4686): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\LuaOpengl.cpp(4712): warning C4996: 'cocos2d::DrawPrimitives::drawSolidPoly': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(150): note: 参见“cocos2d::DrawPrimitives::drawSolidPoly”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4756): warning C4996: 'cocos2d::DrawPrimitives::drawCircle': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(162): note: 参见“cocos2d::DrawPrimitives::drawCircle”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4794): warning C4996: 'cocos2d::DrawPrimitives::drawSolidCircle': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(183): note: 参见“cocos2d::DrawPrimitives::drawSolidCircle”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4836): warning C4996: 'cocos2d::DrawPrimitives::drawQuadBezier': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(203): note: 参见“cocos2d::DrawPrimitives::drawQuadBezier”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4883): warning C4996: 'cocos2d::DrawPrimitives::drawCubicBezier': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(215): note: 参见“cocos2d::DrawPrimitives::drawCubicBezier”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4929): warning C4996: 'cocos2d::DrawPrimitives::drawCatmullRom': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(224): note: 参见“cocos2d::DrawPrimitives::drawCatmullRom”的声明
+..\manual\cocos2d\LuaOpengl.cpp(4975): warning C4996: 'cocos2d::DrawPrimitives::drawCardinalSpline': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(234): note: 参见“cocos2d::DrawPrimitives::drawCardinalSpline”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5007): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4B': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(245): note: 参见“cocos2d::DrawPrimitives::setDrawColor4B”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5039): warning C4996: 'cocos2d::DrawPrimitives::setDrawColor4F': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(256): note: 参见“cocos2d::DrawPrimitives::setDrawColor4F”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5065): warning C4996: 'cocos2d::DrawPrimitives::setPointSize': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\2d/CCDrawingPrimitives.h(263): note: 参见“cocos2d::DrawPrimitives::setPointSize”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5090): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawPoint00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4421): note: 参见“tolua_cocos2d_DrawPrimitives_drawPoint00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5091): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawPoints00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4449): note: 参见“tolua_cocos2d_DrawPrimitives_drawPoints00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5092): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawLine00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4503): note: 参见“tolua_cocos2d_DrawPrimitives_drawLine00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5093): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawRect00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4536): note: 参见“tolua_cocos2d_DrawPrimitives_drawRect00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5094): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawSolidRect00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4569): note: 参见“tolua_cocos2d_DrawPrimitives_drawSolidRect00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5095): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawPoly00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4609): note: 参见“tolua_cocos2d_DrawPrimitives_drawPoly00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5096): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawSolidPoly00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4665): note: 参见“tolua_cocos2d_DrawPrimitives_drawSolidPoly00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5097): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCircle00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4727): note: 参见“tolua_cocos2d_DrawPrimitives_drawCircle00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5098): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawSolidCircle00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4769): note: 参见“tolua_cocos2d_DrawPrimitives_drawSolidCircle00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5099): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawQuadBezier00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4808): note: 参见“tolua_cocos2d_DrawPrimitives_drawQuadBezier00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5100): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCubicBezier00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4849): note: 参见“tolua_cocos2d_DrawPrimitives_drawCubicBezier00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5101): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCatmullRom00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4896): note: 参见“tolua_cocos2d_DrawPrimitives_drawCatmullRom00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5102): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawCardinalSpline00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4942): note: 参见“tolua_cocos2d_DrawPrimitives_drawCardinalSpline00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5103): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawColor4B00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(4988): note: 参见“tolua_cocos2d_DrawPrimitives_drawColor4B00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5104): warning C4996: 'tolua_cocos2d_DrawPrimitives_drawColor4F00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(5020): note: 参见“tolua_cocos2d_DrawPrimitives_drawColor4F00”的声明
+..\manual\cocos2d\LuaOpengl.cpp(5105): warning C4996: 'tolua_cocos2d_DrawPrimitives_setPointSize00': 被声明为已否决
+  ..\manual\cocos2d\LuaOpengl.cpp(5052): note: 参见“tolua_cocos2d_DrawPrimitives_setPointSize00”的声明
+  lua_cocos2dx_deprecated.cpp
+  lua_cocos2dx_experimental_manual.cpp
+  lua_cocos2dx_manual.cpp
+..\manual\cocos2d\lua_cocos2dx_deprecated.cpp(1530): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(301): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(450): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(1783): warning C4018: “<=”: 有符号/无符号不匹配
+  lua_cocos2dx_physics_manual.cpp
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(2591): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(2986): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(3072): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(3151): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(3359): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(3399): warning C4018: “<”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(4064): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(4138): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(4213): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(4286): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(4361): warning C4018: “<=”: 有符号/无符号不匹配
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5118): warning C4996: 'tolua_cocos2dx_DrawNode_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3578): note: 参见“tolua_cocos2dx_DrawNode_setBlendFunc01”的声明
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5305): warning C4996: 'tolua_cocos2dx_Sprite_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3487): note: 参见“tolua_cocos2dx_Sprite_setBlendFunc01”的声明
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5320): warning C4996: 'tolua_cocos2dx_LayerColor_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3552): note: 参见“tolua_cocos2dx_LayerColor_setBlendFunc01”的声明
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5346): warning C4996: 'tolua_cocos2dx_ParticleSystem_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3565): note: 参见“tolua_cocos2dx_ParticleSystem_setBlendFunc01”的声明
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5393): warning C4996: 'tolua_cocos2dx_SpriteBatchNode_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3500): note: 参见“tolua_cocos2dx_SpriteBatchNode_setBlendFunc01”的声明
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5406): warning C4996: 'tolua_cocos2dx_MotionStreak_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3513): note: 参见“tolua_cocos2dx_MotionStreak_setBlendFunc01”的声明
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5419): warning C4996: 'tolua_cocos2dx_AtlasNode_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3526): note: 参见“tolua_cocos2dx_AtlasNode_setBlendFunc01”的声明
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(5432): warning C4996: 'tolua_cocos2dx_ParticleBatchNode_setBlendFunc01': 被声明为已否决
+  ..\manual\cocos2d\lua_cocos2dx_manual.cpp(3539): note: 参见“tolua_cocos2dx_ParticleBatchNode_setBlendFunc01”的声明
+  CCBProxy.cpp
+..\manual\cocos2d\lua_cocos2dx_manual.cpp(7249): warning C4018: “<=”: 有符号/无符号不匹配
+  lua_cocos2dx_cocosbuilder_manual.cpp
+  lua_cocos2dx_cocosdenshion_manual.cpp
+  CustomGUIReader.cpp
+  lua-cocos-studio-conversions.cpp
+  lua_cocos2dx_coco_studio_manual.cpp
+  lua_cocos2dx_csloader_manual.cpp
+  lua_cocos2dx_extension_manual.cpp
+  LuaBasicConversions.cpp
+..\manual\cocostudio\lua_cocos2dx_coco_studio_manual.cpp(386): warning C4996: 'cocostudio::Bone::getIgnoreMovementBoneData': 被声明为已否决
+  D:\myProject\3D\cocos2d-x-3D\frameworks\cocos2d-x\cocos\editor-support/cocostudio/CCBone.h(194): note: 参见“cocostudio::Bone::getIgnoreMovementBoneData”的声明
+  lua_module_register.cpp
+  lua_cocos2dx_navmesh_conversions.cpp
+  lua_cocos2dx_navmesh_manual.cpp
+  lua_cocos2dx_network_manual.cpp
+  Lua_web_socket.cpp
+  lua_xml_http_request.cpp
+  lua_cocos2dx_physics3d_manual.cpp
+  LuaSkeletonAnimation.cpp
+..\manual\network\lua_xml_http_request.cpp(313): warning C4102: “tolua_lerror”: 未引用的标签
+..\manual\network\lua_xml_http_request.cpp(694): warning C4018: “<”: 有符号/无符号不匹配
+  lua_cocos2dx_spine_manual.cpp
+d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\external\bullet\include\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): warning C4099: “btDbvtBroadphase”: 类型名称以前使用“class”现在使用的是“struct” (编译源文件 ..\manual\physics3d\lua_cocos2dx_physics3d_manual.cpp)
+  d:\myproject\3d\cocos2d-x-3d\frameworks\cocos2d-x\external\bullet\include\bullet\bulletcollision\broadphasecollision\btDbvtBroadphase.h(62): note: 参见“btDbvtBroadphase”的声明 (编译源文件 ..\manual\physics3d\lua_cocos2dx_physics3d_manual.cpp)
+  tolua_fix.cpp
+  lua_cocos2dx_experimental_video_manual.cpp
+  lua_cocos2dx_experimental_webview_manual.cpp
+  lua_cocos2dx_ui_manual.cpp
+..\manual\spine\lua_cocos2dx_spine_manual.cpp(509): warning C4996: 'tolua_spine_SkeletoneAnimation_setBlendFunc': 被声明为已否决
+  ..\manual\spine\lua_cocos2dx_spine_manual.cpp(356): note: 参见“tolua_spine_SkeletoneAnimation_setBlendFunc”的声明
+  libluacocos2d.vcxproj -> D:\myProject\3D\cocos2d-x-3D\frameworks\runtime-src\proj.win32\Debug.win32\libluacocos2d.lib
