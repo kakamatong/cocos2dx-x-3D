@@ -71,7 +71,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     register_all_packages();
 
     LuaStack* stack = engine->getLuaStack();
-    stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
+    stack->setXXTEAKeyAndSign("kakamatong", strlen("kakamatong"), "wu_di_hao_ke", strlen("wu_di_hao_ke"));
 
     //register custom function
     //LuaStack* stack = engine->getLuaStack();
