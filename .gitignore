@@ -155,3 +155,4 @@ fastlane/readme.md
 *.opendb
 *.db
 
+res/
