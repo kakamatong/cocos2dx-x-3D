@@ -16,6 +16,17 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="Lobby/HelloWorld.png" Plist="" />
           </AbstractNodeData>
+          <AbstractNodeData Name="Text_1" ActionTag="-1818414763" Tag="3" IconVisible="False" LeftMargin="137.7459" RightMargin="992.2541" TopMargin="292.0227" BottomMargin="397.9773" FontSize="30" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="150.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="212.7459" Y="412.9773" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="236" G="22" B="22" />
+            <PrePosition X="0.1662" Y="0.5736" />
+            <PreSize X="0.1172" Y="0.0417" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>
