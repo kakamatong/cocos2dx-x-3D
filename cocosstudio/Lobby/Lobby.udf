@@ -32,8 +32,10 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="Lobby/MainScene.csd" />
+          <FilePathData Path="Lobby/Sample2_1/My2DLayer.csd" />
+          <FilePathData Path="Lobby/Sample2_1/Sample2_1.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Lobby/MainScene.csd" />
+        <ActiveDocument Path="Lobby/Sample2_1/Sample2_1.csd" />
       </Value>
     </Item>
   </Properties>

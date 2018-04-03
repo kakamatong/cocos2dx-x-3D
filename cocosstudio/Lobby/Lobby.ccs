@@ -6,6 +6,36 @@
         <Folder Name="Lobby">
           <Image Name="HelloWorld.png" />
           <Project Name="MainScene.csd" Type="Scene" />
+          <Folder Name="Sample2_1">
+            <Folder Name="Imge">
+              <Folder Name="fonts">
+                <TTF Name="FZKATJW.ttf" />
+              </Folder>
+              <Folder Name="obj">
+                <Image Name="car01.PNG" />
+                <Mesh Name="car1.obj" />
+                <Mesh Name="ch_t.obj" />
+                <Mesh Name="floor.obj" />
+                <Image Name="floor.png" />
+                <Image Name="ghxp.png" />
+                <Mesh Name="GuanMu.obj" />
+                <Image Name="guanmu.png" />
+              </Folder>
+              <Folder Name="pic">
+                <Image Name="car01.PNG" />
+                <Image Name="CloseNormal.png" />
+                <Image Name="CloseSelected.png" />
+                <Image Name="floor.png" />
+                <Image Name="ghxp.png" />
+                <Image Name="guanmu.png" />
+              </Folder>
+            </Folder>
+            <Folder Name="model">
+              <Mesh Name="car.c3t" />
+            </Folder>
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="Sample2_1.csd" Type="Scene3D" />
+          </Folder>
         </Folder>
       </RootFolder>
     </Group>
