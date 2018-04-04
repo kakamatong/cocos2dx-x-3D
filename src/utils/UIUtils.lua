@@ -16,6 +16,9 @@ function UIUtils.findNodeByName(node, childName)
         end
 
         return nil
+
+    else
+        print("UIUtils.findNodeByName ERROR", node, childName)
     end
 
 end
