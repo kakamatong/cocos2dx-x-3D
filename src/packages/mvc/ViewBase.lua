@@ -36,7 +36,7 @@ function ViewBase:createResourceNode(resourceFilename)
         self.resourceNode_:removeSelf()
         self.resourceNode_ = nil
     end
-    self.resourceNode_ = cc.CSLoader:createNode(resourceFilename)
+    self.resourceNode_ = cc.CSLoader:createNodeWithVisibleSize(resourceFilename)
     assert(self.resourceNode_, string.format("ViewBase:createResourceNode() - load resouce node from file \"%s\" failed", resourceFilename))
     self:addChild(self.resourceNode_)
 end

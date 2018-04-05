@@ -9,28 +9,20 @@
               <Folder Name="fonts">
                 <TTF Name="FZKATJW.ttf" />
               </Folder>
-              <Folder Name="obj">
-                <Image Name="car01.png" />
-                <Mesh Name="car1.obj" />
-                <Mesh Name="ch_t.obj" />
-                <Mesh Name="floor.obj" />
-                <Image Name="floor.png" />
-                <Image Name="ghxp.png" />
-                <Mesh Name="GuanMu.obj" />
-                <Image Name="guanmu.png" />
-              </Folder>
               <Folder Name="pic">
-                <Image Name="car01.PNG" />
                 <Image Name="CloseNormal.png" />
                 <Image Name="CloseSelected.png" />
-                <Image Name="floor.png" />
-                <Image Name="ghxp.png" />
-                <Image Name="guanmu.png" />
               </Folder>
             </Folder>
             <Folder Name="model">
               <Mesh Name="car.c3t" />
               <Image Name="car01.png" />
+              <Mesh Name="chahu.c3t" />
+              <Mesh Name="floor.c3t" />
+              <Image Name="floor.png" />
+              <Image Name="ghxp.png" />
+              <Mesh Name="guanMu.c3t" />
+              <Image Name="guanmu.png" />
             </Folder>
             <Project Name="My2DLayer.csd" Type="Layer" />
             <Project Name="Sample2_1.csd" Type="Scene3D" />

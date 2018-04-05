@@ -1,13 +1,13 @@
 local UIUtils = UIUtils or {}
 
-function UIUtils.findNodeByName(node, childName)
-    if node and childName then
-        local nodeName = node:getName()
+function UIUtils.findNodeByName(fatherNode, childName)
+    if fatherNode and childName then
+        local nodeName = fatherNode:getName()
         if nodeName == childName then
-            return node
+            return fatherNode
         end
 
-        local childs = node:getChildren()
+        local childs = fatherNode:getChildren()
         for k, v in pairs(childs) do
             local childNode = UIUtils.findNodeByName(v,childName)
             if childNode then
@@ -18,9 +18,17 @@ function UIUtils.findNodeByName(node, childName)
         return nil
 
     else
-        print("UIUtils.findNodeByName ERROR", node, childName)
+        print("UIUtils.findNodeByName ERROR", fatherNode, childName)
     end
+end
 
+function UIUtils.addTouchEventListener(fatherNode, childName, callBack)
+    local childNode = UIUtils.findNodeByName(fatherNode,childName)
+    if childNode then
+        childNode:addTouchEventListener(callBack)
+    else
+        print("UIUtils.addTouchEventListener ERROR", fatherNode, childName)
+    end
 end
 
 return UIUtils
