@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="10" ctype="GameLayerObjectData">
         <Size X="1280.0000" Y="720.0000" />
         <Children>
-          <AbstractNodeData Name="KK_MENU" ActionTag="-272122866" Tag="11" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="KK_MENU" ActionTag="-272122866" Tag="11" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <Children>
               <AbstractNodeData Name="KK_BTN_CLOSE" ActionTag="308580930" Tag="12" IconVisible="False" PositionPercentYEnabled="True" LeftMargin="1224.2339" RightMargin="15.7661" TopMargin="340.0000" BottomMargin="340.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="10" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -19,8 +19,8 @@
                 <PreSize X="0.0313" Y="0.0556" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                <PressedFileData Type="Normal" Path="Lobby/Sample2_1/Imge/pic/CloseSelected.png" Plist="" />
-                <NormalFileData Type="Normal" Path="Lobby/Sample2_1/Imge/pic/CloseNormal.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Game/Sample2_1/Imge/pic/CloseSelected.png" Plist="" />
+                <NormalFileData Type="Normal" Path="Game/Sample2_1/Imge/pic/CloseNormal.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
@@ -32,7 +32,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.9500" />
                 <PreSize X="0.2266" Y="0.0653" />
-                <FontResource Type="Normal" Path="Lobby/Sample2_1/Imge/fonts/FZKATJW.ttf" Plist="" />
+                <FontResource Type="Normal" Path="Game/Sample2_1/Imge/fonts/FZKATJW.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

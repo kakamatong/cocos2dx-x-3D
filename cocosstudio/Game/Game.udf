@@ -1,0 +1,20 @@
+<UserData Version="3.10.0.0">
+  <Properties>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="Game/Sample2_1/Sample2_1.csd" />
+          <FilePathData Path="Game/Sample2_1/My2DLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="Game/Sample2_1/My2DLayer.csd" />
+      </Value>
+    </Item>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="Resource" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Windows" />
+      </Value>
+    </Item>
+  </Properties>
+</UserData>

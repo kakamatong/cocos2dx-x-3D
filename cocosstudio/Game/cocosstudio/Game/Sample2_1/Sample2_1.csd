@@ -33,7 +33,7 @@
             <Position3D />
             <Rotation3D X="-90.0000" />
             <Scale3D X="0.2000" Y="0.2000" Z="0.2000" />
-            <FileData Type="Normal" Path="Lobby/Sample2_1/model/car.c3t" Plist="" />
+            <FileData Type="Normal" Path="Game/Sample2_1/model/car.c3t" Plist="" />
           </AbstractNodeData>
         </Children>
         <LeftImage Type="Default" Path="Default/skybox.png" Plist="" />
