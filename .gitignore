@@ -159,4 +159,5 @@ res/
 
 *.res
 *.cache
+*.suo
 *.user
