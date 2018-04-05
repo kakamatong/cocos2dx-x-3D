@@ -35,7 +35,7 @@
             <Project Name="Sample2_1.csd" Type="Scene3D" />
           </Folder>
           <Image Name="HelloWorld.png" />
-          <Project Name="MainScene.csd" Type="Scene" />
+          <Project Name="LobbyScene.csd" Type="Scene" />
         </Folder>
       </RootFolder>
     </Group>

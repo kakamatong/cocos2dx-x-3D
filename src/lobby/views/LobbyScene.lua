@@ -1,11 +1,11 @@
 
-local MainScene = class("MainScene", cc.load("mvc").ViewBase)
-MainScene.RESOURCE_FILENAME = "Lobby/MainScene.csb"
---MainScene.RESOURCE_FILENAME = "Lobby/Sample2_1/Sample2_1.csb"
-MainScene.NODE3D_CSBPATH = "Lobby/Sample2_1/Sample2_1.csb"
-MainScene.KK_SAMPLE_2_1 = "KK_SAMPLE_2_1"
+local LobbyScene = class("LobbyScene", cc.load("mvc").ViewBase)
+LobbyScene.RESOURCE_FILENAME = "Lobby/LobbyScene.csb"
+--LobbyScene.RESOURCE_FILENAME = "Lobby/Sample2_1/Sample2_1.csb"
+LobbyScene.NODE3D_CSBPATH = "Lobby/Sample2_1/Sample2_1.csb"
+LobbyScene.KK_SAMPLE_2_1 = "KK_SAMPLE_2_1"
 
-function MainScene:onCreate()
+function LobbyScene:onCreate()
     local img = UIUtils.findNodeByName(self.resourceNode_, "Image_1")
     if img then
        print("can find Node") 
@@ -28,7 +28,7 @@ function MainScene:onCreate()
 
 end
 
-function MainScene:onTouchEvent(ref, eventType)
+function LobbyScene:onTouchEvent(ref, eventType)
     local a = 1
     if eventType == cc.EventCode.BEGAN then
         
@@ -37,4 +37,4 @@ function MainScene:onTouchEvent(ref, eventType)
     end
 end
 
-return MainScene
+return LobbyScene

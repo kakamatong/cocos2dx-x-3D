@@ -6,7 +6,12 @@ require "cocos.init"
 require "utils.init"
 
 local function main()
-    require("app.MyApp"):create():run()
+    local configs = {
+        viewsRoot  = "lobby.views",
+        modelsRoot = "lobby.models",
+        defaultSceneName = "LobbyScene",
+    }
+    require("lobby.LobbyApp"):create(configs):run()
 end
 
 local status, msg = xpcall(main, __G__TRACKBACK__)
