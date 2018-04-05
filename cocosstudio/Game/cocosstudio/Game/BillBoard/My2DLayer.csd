@@ -24,17 +24,27 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="KK_TITLE" ActionTag="808756346" Tag="13" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="495.0000" RightMargin="495.0000" TopMargin="12.5000" BottomMargin="660.5000" FontSize="40" LabelText="3D模型加载演示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="290.0000" Y="47.0000" />
+              <AbstractNodeData Name="KK_TITLE" ActionTag="808756346" Tag="13" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="496.5000" RightMargin="496.5000" TopMargin="12.5000" BottomMargin="660.5000" FontSize="40" LabelText="BillBoard演示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="287.0000" Y="47.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="640.0000" Y="684.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.9500" />
-                <PreSize X="0.2266" Y="0.0653" />
+                <PreSize X="0.2242" Y="0.0653" />
                 <FontResource Type="Normal" Path="Game/Public/fonts/FZKATJW.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Image_1" ActionTag="-2115612833" Tag="24" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="TopEdge" LeftMargin="26.3245" RightMargin="1196.6754" TopMargin="15.5700" BottomMargin="647.4300" LeftEage="18" RightEage="18" TopEage="18" BottomEage="18" Scale9OriginX="18" Scale9OriginY="18" Scale9Width="21" Scale9Height="21" ctype="ImageViewObjectData">
+                <Size X="57.0000" Y="57.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="54.8245" Y="675.9300" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0428" Y="0.9388" />
+                <PreSize X="0.0445" Y="0.0792" />
+                <FileData Type="Normal" Path="Game/Public/Imge/Icon.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

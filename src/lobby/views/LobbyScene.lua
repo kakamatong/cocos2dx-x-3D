@@ -4,6 +4,8 @@ LobbyScene.RESOURCE_FILENAME = "Lobby/LobbyScene.csb"
 
 LobbyScene.KK_SAMPLE_2_1 = "KK_SAMPLE_2_1"
 
+LobbyScene.KK_BILLBOARD = "KK_BILLBOARD"
+
 function LobbyScene:onCreate()
     local img = UIUtils.findNodeByName(self.resourceNode_, "Image_1")
     if img then
@@ -16,6 +18,7 @@ function LobbyScene:onCreate()
     end
 
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_1, handler(self, self.onTouchEvent))
+    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BILLBOARD, handler(self, self.onTouchEvent))
 end
 
 function LobbyScene:onTouchEvent(ref, eventType)
@@ -31,9 +34,22 @@ function LobbyScene:onTouchEvent(ref, eventType)
 
     local name = ref:getName()
     local tag = ref:getTag()
+    print(self.name_, "onTouchEvent", name, tag)
     if name == self.KK_SAMPLE_2_1 then
         self:onBtnSample_2_1()
+    elseif name == self.KK_BILLBOARD then
+        self:onBtnBillBoard()
+
     end
+end
+
+function LobbyScene:onBtnBillBoard()
+    local configs = {
+        viewsRoot  = "game.views.billBoard",
+        modelsRoot = "game.models",
+        defaultSceneName = "BillBoard",
+    }
+    require("game.GameApp"):create(configs):run()
 end
 
 function LobbyScene:onBtnSample_2_1()

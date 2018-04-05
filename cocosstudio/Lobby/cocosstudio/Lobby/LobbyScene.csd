@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="MainScene" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="3.10.0.0" />
+  <PropertyGroup Name="LobbyScene" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -27,7 +27,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Panel_1" ActionTag="-1624662565" Tag="9" IconVisible="False" LeftMargin="76.7348" RightMargin="1003.2651" TopMargin="73.8997" BottomMargin="446.1003" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="-1624662565" Tag="9" IconVisible="False" LeftMargin="76.7348" RightMargin="1003.2652" TopMargin="73.8997" BottomMargin="446.1003" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="200.0000" Y="200.0000" />
             <Children>
               <AbstractNodeData Name="KK_SAMPLE_2_1" ActionTag="842427656" Tag="8" IconVisible="False" LeftMargin="34.7404" RightMargin="55.2596" TopMargin="22.0282" BottomMargin="141.9718" TouchEnable="True" FontSize="20" ButtonText="Sample_2_1" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -38,6 +38,21 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4487" Y="0.7999" />
                 <PreSize X="0.5500" Y="0.1800" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="KK_BILLBOARD" ActionTag="280840737" Tag="6" IconVisible="False" LeftMargin="180.2036" RightMargin="-80.2036" TopMargin="22.0269" BottomMargin="141.9731" TouchEnable="True" FontSize="20" ButtonText="BillBoard" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="100.0000" Y="36.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="230.2036" Y="159.9731" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="1.1510" Y="0.7999" />
+                <PreSize X="0.5000" Y="0.1800" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />

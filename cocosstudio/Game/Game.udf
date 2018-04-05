@@ -4,9 +4,10 @@
       <Value ctype="TabsInfo">
         <OpenedDocuments>
           <FilePathData Path="Game/Sample2_1/Sample2_1.csd" />
-          <FilePathData Path="Game/Sample2_1/My2DLayer.csd" />
+          <FilePathData Path="Game/BillBoard/My2DLayer.csd" />
+          <FilePathData Path="Game/BillBoard/BillBoard.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Game/Sample2_1/Sample2_1.csd" />
+        <ActiveDocument Path="Game/BillBoard/BillBoard.csd" />
       </Value>
     </Item>
     <Item Key="CocosRecentOperation">

@@ -4,16 +4,25 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Folder Name="Game">
-          <Folder Name="Sample2_1">
-            <Folder Name="Imge">
-              <Folder Name="fonts">
-                <TTF Name="FZKATJW.ttf" />
-              </Folder>
-              <Folder Name="pic">
-                <Image Name="CloseNormal.png" />
-                <Image Name="CloseSelected.png" />
-              </Folder>
+          <Folder Name="BillBoard">
+            <Project Name="BillBoard.csd" Type="Scene3D" />
+            <Project Name="My2DLayer.csd" Type="Layer" />
+          </Folder>
+          <Folder Name="Public">
+            <Folder Name="fonts">
+              <TTF Name="FZKATJW.ttf" />
             </Folder>
+            <Folder Name="Imge">
+              <Image Name="CloseNormal.png" />
+              <Image Name="CloseSelected.png" />
+              <Image Name="Icon.png" />
+            </Folder>
+            <Folder Name="model">
+              <Mesh Name="car.c3t" />
+              <Image Name="car01.png" />
+            </Folder>
+          </Folder>
+          <Folder Name="Sample2_1">
             <Folder Name="model">
               <Mesh Name="car.c3t" />
               <Image Name="car01.png" />

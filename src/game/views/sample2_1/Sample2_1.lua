@@ -20,11 +20,6 @@ end
 
 function Sample2_1:onTouchMenu(ref, eventType)
     if eventType == cc.EventCode.BEGAN then
-        -- local name = ref:getName()
-        -- local tag = ref:getTag()
-        -- print(self.name_, "onTouchMenuBegin", name, tag)
-        -- self.beginPos = ref:getLocation()
-        -- local a = 1
         self.beginPosX = ref:getTouchBeganPosition().x
         self.prePosX = self.beginPosX
     elseif eventType == cc.EventCode.END then
@@ -32,7 +27,6 @@ function Sample2_1:onTouchMenu(ref, eventType)
     elseif eventType == cc.EventCode.MOVED then
         local name = ref:getName()
         local tag = ref:getTag()
-        --print(self.name_, "onTouchMenuBegin", name, tag)
         
         local nowPosX = ref:getTouchMovePosition().x
         local isMove = false
