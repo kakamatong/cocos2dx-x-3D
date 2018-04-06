@@ -13,6 +13,11 @@
               <TTF Name="FZKATJW.ttf" />
             </Folder>
             <Folder Name="Imge">
+              <Image Name="check_box_active.png" />
+              <Image Name="check_box_active_disable.png" />
+              <Image Name="check_box_normal.png" />
+              <Image Name="check_box_normal_disable.png" />
+              <Image Name="check_box_normal_press.png" />
               <Image Name="CloseNormal.png" />
               <Image Name="CloseSelected.png" />
               <Image Name="Icon.png" />

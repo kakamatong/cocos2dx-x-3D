@@ -31,4 +31,22 @@ function UIUtils.addTouchEventListener(fatherNode, childName, callBack)
     end
 end
 
+function UIUtils.addEventListener(fatherNode, childName, callBack)
+    local childNode = UIUtils.findNodeByName(fatherNode,childName)
+    if childNode then
+        childNode:addEventListener(callBack)
+    else
+        print("UIUtils.addEventListener ERROR", fatherNode, childName)
+    end
+end
+
+function UIUtils.setSelected(fatherNode, childName, b)
+    local childNode = UIUtils.findNodeByName(fatherNode,childName)
+    if childNode then
+        childNode:setSelected(b)
+    else
+        print("UIUtils.setSelected ERROR", fatherNode, childName)
+    end
+end
+
 return UIUtils

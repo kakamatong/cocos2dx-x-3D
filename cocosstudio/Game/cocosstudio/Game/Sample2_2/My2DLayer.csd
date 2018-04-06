@@ -24,14 +24,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="KK_TITLE" ActionTag="808756346" Tag="13" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="520.0000" RightMargin="520.0000" TopMargin="12.5000" BottomMargin="660.5000" FontSize="40" LabelText="背面裁剪演示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="240.0000" Y="47.0000" />
+              <AbstractNodeData Name="KK_TITLE" ActionTag="808756346" Tag="13" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="560.0000" RightMargin="560.0000" TopMargin="12.5000" BottomMargin="660.5000" FontSize="40" LabelText="裁剪演示" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="160.0000" Y="47.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="640.0000" Y="684.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.9500" />
-                <PreSize X="0.1875" Y="0.0653" />
+                <PreSize X="0.1250" Y="0.0653" />
                 <FontResource Type="Normal" Path="Game/Public/fonts/FZKATJW.ttf" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -52,19 +52,83 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="CheckBox_1" ActionTag="-1953171147" Tag="21" IconVisible="False" LeftMargin="76.2428" RightMargin="1163.7572" TopMargin="22.3985" BottomMargin="657.6015" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
-                <Size X="40.0000" Y="40.0000" />
+              <AbstractNodeData Name="KK_CB_GL_BACK" ActionTag="-1953171147" Tag="21" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="TopEdge" LeftMargin="47.2433" RightMargin="1204.7567" TopMargin="28.3984" BottomMargin="663.6016" TouchEnable="True" CheckedState="True" ctype="CheckBoxObjectData">
+                <Size X="28.0000" Y="28.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="96.2428" Y="677.6015" />
+                <Position X="61.2433" Y="677.6016" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0752" Y="0.9411" />
-                <PreSize X="0.0313" Y="0.0556" />
-                <NormalBackFileData Type="Default" Path="Default/CheckBox_Normal.png" Plist="" />
-                <PressedBackFileData Type="Default" Path="Default/CheckBox_Press.png" Plist="" />
-                <DisableBackFileData Type="Default" Path="Default/CheckBox_Disable.png" Plist="" />
-                <NodeNormalFileData Type="Default" Path="Default/CheckBoxNode_Normal.png" Plist="" />
-                <NodeDisableFileData Type="Default" Path="Default/CheckBoxNode_Disable.png" Plist="" />
+                <PrePosition X="0.0478" Y="0.9411" />
+                <PreSize X="0.0219" Y="0.0389" />
+                <NormalBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal.png" Plist="" />
+                <PressedBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal_press.png" Plist="" />
+                <DisableBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal_disable.png" Plist="" />
+                <NodeNormalFileData Type="Normal" Path="Game/Public/Imge/check_box_active.png" Plist="" />
+                <NodeDisableFileData Type="Normal" Path="Game/Public/Imge/check_box_active_disable.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_1" ActionTag="2085191417" Tag="22" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="TopEdge" LeftMargin="83.1274" RightMargin="1105.8726" TopMargin="30.7683" BottomMargin="664.2317" FontSize="25" LabelText="GL_BACK" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="91.0000" Y="25.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="83.1274" Y="676.7317" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0649" Y="0.9399" />
+                <PreSize X="0.0711" Y="0.0347" />
+                <FontResource Type="Default" Path="" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_1_0" ActionTag="-1969825143" Tag="23" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="TopEdge" LeftMargin="86.8300" RightMargin="972.1700" TopMargin="145.4067" BottomMargin="549.5933" FontSize="25" LabelText="GL_FRONT_AND_BACK" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="221.0000" Y="25.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="86.8300" Y="562.0933" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0678" Y="0.7807" />
+                <PreSize X="0.1727" Y="0.0347" />
+                <FontResource Type="Default" Path="" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_1_1" ActionTag="1459578584" Tag="24" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="TopEdge" LeftMargin="83.0000" RightMargin="1093.0000" TopMargin="90.0055" BottomMargin="604.9945" FontSize="25" LabelText="GL_FRONT" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="104.0000" Y="25.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="83.0000" Y="617.4945" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0648" Y="0.8576" />
+                <PreSize X="0.0812" Y="0.0347" />
+                <FontResource Type="Default" Path="" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="KK_CB_GL_BACK_AND_FRONT" ActionTag="-1178910816" Tag="25" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="TopEdge" LeftMargin="47.0000" RightMargin="1205.0000" TopMargin="143.8894" BottomMargin="548.1106" TouchEnable="True" ctype="CheckBoxObjectData">
+                <Size X="28.0000" Y="28.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="61.0000" Y="562.1106" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0477" Y="0.7807" />
+                <PreSize X="0.0219" Y="0.0389" />
+                <NormalBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal.png" Plist="" />
+                <PressedBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal_press.png" Plist="" />
+                <DisableBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal_disable.png" Plist="" />
+                <NodeNormalFileData Type="Normal" Path="Game/Public/Imge/check_box_active.png" Plist="" />
+                <NodeDisableFileData Type="Normal" Path="Game/Public/Imge/check_box_active_disable.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="KK_CB_GL_FRONT" ActionTag="597339589" Tag="26" IconVisible="False" HorizontalEdge="LeftEdge" VerticalEdge="TopEdge" LeftMargin="47.0000" RightMargin="1205.0000" TopMargin="89.0627" BottomMargin="602.9373" TouchEnable="True" ctype="CheckBoxObjectData">
+                <Size X="28.0000" Y="28.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="61.0000" Y="616.9373" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0477" Y="0.8569" />
+                <PreSize X="0.0219" Y="0.0389" />
+                <NormalBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal.png" Plist="" />
+                <PressedBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal_press.png" Plist="" />
+                <DisableBackFileData Type="Normal" Path="Game/Public/Imge/check_box_normal_disable.png" Plist="" />
+                <NodeNormalFileData Type="Normal" Path="Game/Public/Imge/check_box_active.png" Plist="" />
+                <NodeDisableFileData Type="Normal" Path="Game/Public/Imge/check_box_active_disable.png" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />

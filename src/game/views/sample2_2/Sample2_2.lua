@@ -8,6 +8,14 @@ Sample2_2.KK_BTN_CLOSE = "KK_BTN_CLOSE"
 Sample2_2.KK_CHANGE_TYPE = "KK_CHANGE_TYPE"
 Sample2_2.KK_CHTT   = "KK_CHTT"
 
+Sample2_2.KK_CB_GL_BACK   = "KK_CB_GL_BACK"
+Sample2_2.KK_CB_GL_FRONT   = "KK_CB_GL_FRONT"
+Sample2_2.KK_CB_GL_BACK_AND_FRONT   = "KK_CB_GL_BACK_AND_FRONT"
+Sample2_2.checkBoxList = {
+    Sample2_2.KK_CB_GL_BACK,
+    Sample2_2.KK_CB_GL_FRONT,
+    Sample2_2.KK_CB_GL_BACK_AND_FRONT
+}
 function Sample2_2:onCreate()
     print("onCreate")
     self.camera = UIUtils.findNodeByName(self.resourceNode_, self.KK_CAMERA)
@@ -29,6 +37,10 @@ function Sample2_2:onCreate()
         self.resourceNode_:addChild(layer2d)
         UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BTN_CLOSE, handler(self, self.onTouchEvent))
         UIUtils.addTouchEventListener(self.resourceNode_, self.KK_CHANGE_TYPE, handler(self,self.onTouchEvent))
+
+        UIUtils.addEventListener(self.resourceNode_, self.KK_CB_GL_BACK, handler(self,self.onEventBack))
+        UIUtils.addEventListener(self.resourceNode_, self.KK_CB_GL_FRONT, handler(self,self.onEventBack))
+        UIUtils.addEventListener(self.resourceNode_, self.KK_CB_GL_BACK_AND_FRONT, handler(self,self.onEventBack))
     end
 
     self.openType = false
@@ -47,6 +59,40 @@ function Sample2_2:updateFrame()
 
     self.camera:setPosition3D(cc.vec3(cx,40,cz)) 
     self.camera:lookAt(cc.vec3(0,0,0), cc.vec3(0,1,0))
+end
+
+function Sample2_2:onEventBack(ref, eventType)
+    if eventType == ccui.CheckBoxEventType.selected then
+        self:onSelected(ref)
+    elseif eventType == ccui.CheckBoxEventType.unselected then
+        self:unSelected(ref)
+    end
+end
+
+function Sample2_2:onSelected(ref)
+    local name = ref:getName()
+    for k, v in pairs(self.checkBoxList) do
+        if v == name then
+            self:changeTyep(name)
+        else
+            UIUtils.setSelected(self.resourceNode_,v,false)
+        end
+    end
+end
+
+function Sample2_2:unSelected(ref)
+    local name = ref:getName()
+    UIUtils.setSelected(self.resourceNode_,name,true)
+end
+
+function Sample2_2:changeTyep(name)
+    if name == self.KK_CB_GL_BACK then
+        self.chtt:setCullFace(gl.BACK)
+    elseif name == self.KK_CB_GL_FRONT then
+        self.chtt:setCullFace(gl.FRONT)
+    elseif name == self.KK_CB_GL_BACK_AND_FRONT then
+        self.chtt:setCullFace(gl.FRONT_AND_BACK)
+    end
 end
 
 function Sample2_2:onTouchEvent(ref, eventType)
