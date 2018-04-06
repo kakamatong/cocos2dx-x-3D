@@ -100,4 +100,11 @@ function Sample2_2:onBtnClose()
     require("lobby.LobbyApp"):create(configs):run()
 end
 
+function BillBoard:onExit()
+    if self.scheID then
+        local sche = cc.Director:getInstance():getScheduler()
+        sche:unscheduleScriptEntry(self.scheID)
+    end
+end
+
 return Sample2_2

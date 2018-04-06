@@ -88,8 +88,10 @@ function BillBoard:onBtnClose()
 end
 
 function BillBoard:onExit()
-    local sche = cc.Director:getInstance():getScheduler()
-    sche:unscheduleScriptEntry(self.scheID)
+    if self.scheID then
+        local sche = cc.Director:getInstance():getScheduler()
+        sche:unscheduleScriptEntry(self.scheID)
+    end
 end
 
 return BillBoard
