@@ -4,6 +4,8 @@ LobbyScene.RESOURCE_FILENAME = "Lobby/LobbyScene.csb"
 
 LobbyScene.KK_SAMPLE_2_1 = "KK_SAMPLE_2_1"
 LobbyScene.KK_SAMPLE_2_2 = "KK_SAMPLE_2_2"
+LobbyScene.KK_SAMPLE_2_3 = "KK_SAMPLE_2_3"
+LobbyScene.KK_SAMPLE = "KK_SAMPLE_"
 
 LobbyScene.KK_BILLBOARD = "KK_BILLBOARD"
 
@@ -21,6 +23,7 @@ function LobbyScene:onCreate()
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_1, handler(self, self.onTouchEvent))
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BILLBOARD, handler(self, self.onTouchEvent))
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_2, handler(self, self.onTouchEvent))
+    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_3, handler(self, self.onTouchEvent))
 end
 
 function LobbyScene:onTouchEvent(ref, eventType)
@@ -37,12 +40,13 @@ function LobbyScene:onTouchEvent(ref, eventType)
     local name = ref:getName()
     local tag = ref:getTag()
     print(self.name_, "onTouchEvent", name, tag)
-    if name == self.KK_SAMPLE_2_1 then
-        self:onBtnSample_2_1()
-    elseif name == self.KK_BILLBOARD then
+    if name == self.KK_BILLBOARD then
         self:onBtnBillBoard()
-    elseif name == self.KK_SAMPLE_2_2 then
-        self:onBtnSample_2_2()
+    elseif string.find(name,self.KK_SAMPLE) then
+        local a = string.match(name,"KK_SAMPLE_(%d+)_")
+        local b = string.match(name,"KK_SAMPLE_%d+_(%d+)")
+
+        self:onBtnSample(tonumber(a), tonumber(b))
     end
 end
 
@@ -55,20 +59,13 @@ function LobbyScene:onBtnBillBoard()
     require("game.GameApp"):create(configs):run()
 end
 
-function LobbyScene:onBtnSample_2_1()
+function LobbyScene:onBtnSample(a,b)
+    local tmpViewRoomt = string.format("game.views.sample%d_%d", a, b)
+    local tmpDefaultSceneName = string.format("Sample%d_%d", a, b)
     local configs = {
-        viewsRoot  = "game.views.sample2_1",
+        viewsRoot  = tmpViewRoomt,
         modelsRoot = "game.models",
-        defaultSceneName = "Sample2_1",
-    }
-    require("game.GameApp"):create(configs):run()
-end
-
-function LobbyScene:onBtnSample_2_2()
-    local configs = {
-        viewsRoot  = "game.views.sample2_2",
-        modelsRoot = "game.models",
-        defaultSceneName = "Sample2_2",
+        defaultSceneName = tmpDefaultSceneName,
     }
     require("game.GameApp"):create(configs):run()
 end

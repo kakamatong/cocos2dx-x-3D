@@ -49,4 +49,13 @@ function UIUtils.setSelected(fatherNode, childName, b)
     end
 end
 
+function UIUtils.setString(fatherNode, childName, str)
+    local childNode = UIUtils.findNodeByName(fatherNode,childName)
+    if childNode then
+        childNode:setString(str)
+    else
+        print("UIUtils.setString ERROR", fatherNode, childName)
+    end
+end
+
 return UIUtils
