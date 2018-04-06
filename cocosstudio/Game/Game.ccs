@@ -16,6 +16,8 @@
               <Image Name="CloseNormal.png" />
               <Image Name="CloseSelected.png" />
               <Image Name="Icon.png" />
+              <Image Name="normal.png" />
+              <Image Name="press.png" />
             </Folder>
             <Folder Name="model">
               <Mesh Name="car.c3t" />
@@ -35,6 +37,15 @@
             </Folder>
             <Project Name="My2DLayer.csd" Type="Layer" />
             <Project Name="Sample2_1.csd" Type="Scene3D" />
+          </Folder>
+          <Folder Name="Sample2_2">
+            <Folder Name="model">
+              <Mesh Name="ch_tt.c3b" />
+              <Mesh Name="ch_tt.c3t" />
+              <Image Name="ghxp.png" />
+            </Folder>
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="Sample2_2.csd" Type="Scene3D" />
           </Folder>
         </Folder>
       </RootFolder>

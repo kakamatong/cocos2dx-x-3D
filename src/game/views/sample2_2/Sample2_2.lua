@@ -1,0 +1,103 @@
+local Sample2_2 = class("Sample2_2", cc.load("mvc").ViewBase)
+Sample2_2.RESOURCE_FILENAME = "Game/Sample2_2/Sample2_2.csb"
+Sample2_2.LAYER_2D = "Game/Sample2_2/My2DLayer.csb"
+
+Sample2_2.KK_CAMERA = "KK_CAMERA"
+Sample2_2.KK_BTN_CLOSE = "KK_BTN_CLOSE"
+
+Sample2_2.KK_CHANGE_TYPE = "KK_CHANGE_TYPE"
+Sample2_2.KK_CHTT   = "KK_CHTT"
+
+function Sample2_2:onCreate()
+    print("onCreate")
+    self.camera = UIUtils.findNodeByName(self.resourceNode_, self.KK_CAMERA)
+    if self.camera then
+        self.dDegree = 360 / (20 * 60)
+        self.nowDegree = 0
+        local sche = cc.Director:getInstance():getScheduler()
+        self.scheID = sche:scheduleScriptFunc(handler(self, self.updateFrame), 0, false)
+    end
+
+    self.chtt = UIUtils.findNodeByName(self.resourceNode_,self.KK_CHTT)
+    if self.chtt then
+        self.chtt:setCullFace(gl.BACK)
+        self.chtt:setCullFaceEnabled(false)
+    end
+
+    local layer2d = cc.CSLoader:createNodeWithVisibleSize(self.LAYER_2D)
+    if layer2d then
+        self.resourceNode_:addChild(layer2d)
+        UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BTN_CLOSE, handler(self, self.onTouchEvent))
+        UIUtils.addTouchEventListener(self.resourceNode_, self.KK_CHANGE_TYPE, handler(self,self.onTouchEvent))
+    end
+
+    self.openType = false
+end
+
+function Sample2_2:updateFrame()
+    self.nowDegree = self.nowDegree + self.dDegree
+    if self.nowDegree >= 360 then
+        self.nowDegree = self.nowDegree - 360
+    elseif self.nowDegree <= 0 then
+        self.nowDegree = self.nowDegree + 360
+    end
+    --print("-----nowDegree", self.nowDegree)
+    local cx = math.sin(self.nowDegree * 3.1415926 / 180) * 160
+    local cz = math.cos(self.nowDegree * 3.1415926 / 180) * 160
+
+    self.camera:setPosition3D(cc.vec3(cx,40,cz)) 
+    self.camera:lookAt(cc.vec3(0,0,0), cc.vec3(0,1,0))
+end
+
+function Sample2_2:onTouchEvent(ref, eventType)
+    if eventType == cc.EventCode.BEGAN then
+        
+    elseif eventType == cc.EventCode.ENDED then
+
+    end
+
+    if eventType ~= cc.EventCode.ENDED then
+        return 
+    end
+
+    local name = ref:getName()
+    local tag = ref:getTag()
+    print(self.name_, "onTouchEvent", name, tag)
+
+    if name == self.KK_BTN_CLOSE then
+        self:onBtnClose()
+    elseif name == self.KK_CHANGE_TYPE then
+        self:onBtnChangeType()
+    end
+end
+
+function Sample2_2:onBtnChangeType()
+    local titleText = ""
+    if self.openType then
+        self.openType = false
+        titleText = "打开裁剪"
+    else
+        self.openType = true
+        titleText = "关闭裁剪"
+    end
+
+    local button = UIUtils.findNodeByName(self.resourceNode_, self.KK_CHANGE_TYPE)
+    if button then
+        button:setTitleText(titleText)
+    end
+
+    if self.chtt then
+        self.chtt:setCullFaceEnabled(self.openType)
+    end
+end
+
+function Sample2_2:onBtnClose()
+    local configs = {
+        viewsRoot  = "lobby.views",
+        modelsRoot = "lobby.models",
+        defaultSceneName = "LobbyScene",
+    }
+    require("lobby.LobbyApp"):create(configs):run()
+end
+
+return Sample2_2
