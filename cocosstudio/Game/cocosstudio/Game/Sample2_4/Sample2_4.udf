@@ -2,8 +2,8 @@
   <Properties>
     <Item Key="CameraData">
       <Value ctype="CameraData">
-        <Position Y="661.7923" Z="0.0010" />
-        <Rotation X="-89.9999" />
+        <Position X="5.9501" Y="39.3375" Z="661.7923" />
+        <Rotation />
       </Value>
     </Item>
   </Properties>

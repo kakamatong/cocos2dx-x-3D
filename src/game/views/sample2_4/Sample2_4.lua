@@ -4,6 +4,7 @@ Sample2_4.LAYER_2D = "Game/Sample2_4/My2DLayer.csb"
 
 Sample2_4.KK_CAMERA = "KK_CAMERA"
 Sample2_4.KK_BTN_CLOSE = "KK_BTN_CLOSE"
+Sample2_4.KK_GUAISOU = "KK_GUAISOU"
 
 function Sample2_4:onCreate()
     print("onCreate")
@@ -19,6 +20,25 @@ function Sample2_4:onCreate()
     if layer2d then
         self.resourceNode_:addChild(layer2d)
         UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BTN_CLOSE, handler(self, self.onTouchEvent))
+    end
+
+    local wuqi = cc.Sprite3D:create("Game/Sample2_4/c3b/xiaoGuaiShou/weaponL.c3b")
+    if wuqi then
+        wuqi:setRotation3D(cc.vec3(0,60,0))
+        wuqi:setScale(0.05)
+        wuqi:setCameraMask(2)
+        local guawu = UIUtils.findNodeByName(self.resourceNode_,self.KK_GUAISOU)
+        if guawu then
+            local node = guawu:getAttachNode("Bip01 L Finger0")
+            node:addChild(wuqi)
+
+            -- local act = cc.Animation3D:create("Game/Sample2_4/c3b/xiaoGuaiShou/xiaoGuaiShou.c3b")
+            -- if act then
+            --     local a = cc.Animate3D:create(act, 2, 5)
+            --     a:setSpeed(a:getSpeed() * 0.7)
+            --     guawu:runAction(cc.RepeatForever:create(a))
+            -- end
+        end
     end
 end
 

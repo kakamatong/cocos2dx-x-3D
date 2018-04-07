@@ -20,10 +20,10 @@
             <ForwardImage Type="Default" Path="Default/skybox.png" Plist="" />
             <BackImage Type="Default" Path="Default/skybox.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="DirectionLight" CameraFlagMode="31" Flag="LIGHT0" ctype="Light3DObjectData">
+          <AbstractNodeData Name="DirectionLight" CameraFlagMode="31" Type="POINT" Flag="LIGHT1" ctype="Light3DObjectData">
             <Size X="0.0000" Y="0.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <Position3D Y="3.0000" />
+            <Position3D Y="300.0000" />
             <Rotation3D X="50.0000" Y="180.0000" />
             <Scale3D X="1.0000" Y="1.0000" Z="1.0000" />
           </AbstractNodeData>
@@ -38,7 +38,7 @@
           <AbstractNodeData Name="KK_TREE" ActionTag="-1917201293" Tag="11" CameraFlagMode="30" LightFlag="LIGHT0" ctype="Sprite3DObjectData">
             <Size X="253.8781" Y="201.8634" />
             <CColor A="255" R="255" G="255" B="255" />
-            <Position3D X="-200.0000" Z="0.0000" />
+            <Position3D X="-200.0000" />
             <Rotation3D X="180.0000" Y="180.0000" />
             <Scale3D X="0.5000" Y="0.5000" Z="0.5000" />
             <FileData Type="Normal" Path="Game/Sample2_4/c3b/treeAll/shuGan.c3b" Plist="" />
