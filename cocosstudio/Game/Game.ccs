@@ -27,6 +27,7 @@
             <Folder Name="model">
               <Mesh Name="car.c3t" />
               <Image Name="car01.png" />
+              <Mesh Name="guanMu.c3t" />
             </Folder>
           </Folder>
           <Folder Name="Sample2_1">
@@ -51,6 +52,35 @@
             </Folder>
             <Project Name="My2DLayer.csd" Type="Layer" />
             <Project Name="Sample2_2.csd" Type="Scene3D" />
+          </Folder>
+          <Folder Name="Sample2_4">
+            <Folder Name="c3b">
+              <Folder Name="build">
+                <Mesh Name="YhOk.c3b" />
+              </Folder>
+              <Folder Name="floor">
+                <Mesh Name="floor.c3b" />
+              </Folder>
+              <Folder Name="flower">
+                <Mesh Name="BWFlower.c3b" />
+              </Folder>
+              <Folder Name="knight">
+                <Mesh Name="knight.c3b" />
+              </Folder>
+              <Folder Name="tao">
+                <Mesh Name="Tao.c3b" />
+              </Folder>
+              <Folder Name="treeAll">
+                <Mesh Name="shuGan.c3b" />
+                <Mesh Name="yeZi.c3b" />
+              </Folder>
+              <Folder Name="xiaoGuaiShou">
+                <Mesh Name="weaponL.c3b" />
+                <Mesh Name="xiaoGuaiShou.c3b" />
+              </Folder>
+            </Folder>
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="Sample2_4.csd" Type="Scene3D" />
           </Folder>
         </Folder>
       </RootFolder>
