@@ -6,6 +6,7 @@ LobbyScene.KK_SAMPLE_2_1 = "KK_SAMPLE_2_1"
 LobbyScene.KK_SAMPLE_2_2 = "KK_SAMPLE_2_2"
 LobbyScene.KK_SAMPLE_2_3 = "KK_SAMPLE_2_3"
 LobbyScene.KK_SAMPLE_2_4 = "KK_SAMPLE_2_4"
+LobbyScene.KK_SAMPLE_2_5 = "KK_SAMPLE_2_5"
 LobbyScene.KK_SAMPLE = "KK_SAMPLE_"
 
 LobbyScene.KK_BILLBOARD = "KK_BILLBOARD"
@@ -26,6 +27,7 @@ function LobbyScene:onCreate()
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_2, handler(self, self.onTouchEvent))
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_3, handler(self, self.onTouchEvent))
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_4, handler(self, self.onTouchEvent))
+    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_5, handler(self, self.onTouchEvent))
 end
 
 function LobbyScene:onTouchEvent(ref, eventType)
