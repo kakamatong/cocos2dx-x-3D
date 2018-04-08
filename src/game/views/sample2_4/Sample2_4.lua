@@ -32,12 +32,12 @@ function Sample2_4:onCreate()
             local node = guawu:getAttachNode("Bip01 L Finger0")
             node:addChild(wuqi)
 
-            -- local act = cc.Animation3D:create("Game/Sample2_4/c3b/xiaoGuaiShou/xiaoGuaiShou.c3b")
-            -- if act then
-            --     local a = cc.Animate3D:create(act, 2, 5)
-            --     a:setSpeed(a:getSpeed() * 0.7)
-            --     guawu:runAction(cc.RepeatForever:create(a))
-            -- end
+            local act = cc.Animation3D:create("Game/Sample2_4/c3b/xiaoGuaiShou/xiaoGuaiShou.c3b")
+            if act then
+                local a = cc.Animate3D:create(act, 2, 5)
+                a:setSpeed(a:getSpeed() * 0.7)
+                guawu:runAction(cc.RepeatForever:create(a))
+            end
         end
     end
 end

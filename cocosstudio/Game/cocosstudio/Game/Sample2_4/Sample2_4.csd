@@ -20,7 +20,7 @@
             <ForwardImage Type="Default" Path="Default/skybox.png" Plist="" />
             <BackImage Type="Default" Path="Default/skybox.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="DirectionLight" CameraFlagMode="31" Type="POINT" Flag="LIGHT1" ctype="Light3DObjectData">
+          <AbstractNodeData Name="DirectionLight" CameraFlagMode="31" Type="AMBIENT" Flag="LIGHT1" ctype="Light3DObjectData">
             <Size X="0.0000" Y="0.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <Position3D Y="300.0000" />
@@ -107,7 +107,7 @@
             <Scale3D X="0.2500" Y="0.2500" Z="0.2500" />
             <FileData Type="Normal" Path="Game/Public/model/guanMu.c3t" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="KK_GUAISOU" ActionTag="1162166500" Tag="18" CameraFlagMode="30" RunAction3D="True" LightFlag="LIGHT0" ctype="Sprite3DObjectData">
+          <AbstractNodeData Name="KK_GUAISOU" ActionTag="1162166500" Tag="18" CameraFlagMode="30" LightFlag="LIGHT0" ctype="Sprite3DObjectData">
             <Size X="12579.0791" Y="9852.0596" />
             <CColor A="255" R="255" G="255" B="255" />
             <Position3D Z="70.0000" />
