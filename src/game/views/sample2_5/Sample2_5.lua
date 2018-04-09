@@ -23,6 +23,11 @@ function Sample2_5:onCreate()
         self.resourceNode_:addChild(layer2d)
         UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BTN_CLOSE, handler(self, self.onTouchEvent))
         UIUtils.setString(self.resourceNode_,self.KK_TITLE,"3D骨骼动画帧回调演示")
+        local infos = ccui.Text:create()
+        infos:setName("kk_infos")
+        infos:setFontSize(35)
+        infos:setPosition(cc.p(640,300))
+        layer2d:addChild(infos)
     end
 
     local wuqi = cc.Sprite3D:create("Game/Sample2_4/c3b/xiaoGuaiShou/weaponL.c3b")
@@ -52,12 +57,15 @@ function Sample2_5:onCreate()
             local animate3D = cc.Animate3D:create(animation3D,2,5)
             animate3D:setSpeed(animate3D:getSpeed() * 0.7)
             kingNight:runAction(cc.RepeatForever:create(animate3D))
-            animate3D:setKeyFrameUserInfo(1,{})
+            --animate3D:setKeyFrameUserInfo(1,{})
             animate3D:setKeyFrameUserInfo(95,{})
             --local listener = cc.EventListenerCustom:new()
             local callBack = function(eventData,a,b)
                 print("--------------------------aaaaaaaaa",type(eventData))
-                
+                local infos = UIUtils.findNodeByName(self.resourceNode_,"kk_infos")
+                if infos then
+                    infos:setString("冲啊！")
+                end
                 print(ToolUtils.serialize(eventData:getEventName()))
                 local a = 1
             end
