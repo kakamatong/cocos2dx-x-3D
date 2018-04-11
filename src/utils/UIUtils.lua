@@ -58,4 +58,13 @@ function UIUtils.setString(fatherNode, childName, str)
     end
 end
 
+function UIUtils.setPercent(fatherNode, childName, p)
+    local childNode = UIUtils.findNodeByName(fatherNode,childName)
+    if childNode then
+        childNode:setPercent(p)
+    else
+        print("UIUtils.setPercent ERROR", fatherNode, childName)
+    end
+end
+
 return UIUtils

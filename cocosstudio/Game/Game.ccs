@@ -20,9 +20,12 @@
               <Image Name="check_box_normal_press.png" />
               <Image Name="CloseNormal.png" />
               <Image Name="CloseSelected.png" />
+              <Image Name="HelloWorld.png" />
               <Image Name="Icon.png" />
               <Image Name="normal.png" />
               <Image Name="press.png" />
+              <Image Name="slider_bar_active_9patch.png" />
+              <Image Name="sliderProgress.png" />
             </Folder>
             <Folder Name="model">
               <Mesh Name="car.c3t" />
@@ -81,6 +84,36 @@
             </Folder>
             <Project Name="My2DLayer.csd" Type="Layer" />
             <Project Name="Sample2_4.csd" Type="Scene3D" />
+          </Folder>
+          <Folder Name="Sample2_6">
+            <Folder Name="c3b">
+              <Folder Name="floor">
+                <Mesh Name="floor.c3b" />
+                <Image Name="floor.png" />
+              </Folder>
+              <Folder Name="guanmu">
+                <Mesh Name="guanMu.c3t" />
+              </Folder>
+              <Folder Name="hero1">
+                <Mesh Name="Hi1.c3b" />
+              </Folder>
+              <Folder Name="hero2">
+                <Mesh Name="Hi2.c3b" />
+              </Folder>
+              <Folder Name="hero3">
+                <Mesh Name="Hi3.c3b" />
+              </Folder>
+              <Folder Name="hero4">
+                <Mesh Name="Hi4.c3b" />
+              </Folder>
+              <Folder Name="tao">
+                <Mesh Name="Tao.c3b" />
+              </Folder>
+            </Folder>
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="tmpExportC3b.csd" Type="Scene3D" />
+            <Project Name="Sample2_6.csd" Type="Scene3D" />
+            <Project Name="LoadLayer.csd" Type="Layer" />
           </Folder>
         </Folder>
       </RootFolder>
