@@ -110,10 +110,10 @@
                 <Mesh Name="Tao.c3b" />
               </Folder>
             </Folder>
-            <Project Name="My2DLayer.csd" Type="Layer" />
-            <Project Name="tmpExportC3b.csd" Type="Scene3D" />
-            <Project Name="Sample2_6.csd" Type="Scene3D" />
             <Project Name="LoadLayer.csd" Type="Layer" />
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="Sample2_6.csd" Type="Scene3D" />
+            <Project Name="tmpExportC3b.csd" Type="Scene3D" />
           </Folder>
         </Folder>
       </RootFolder>
