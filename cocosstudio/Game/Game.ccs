@@ -115,6 +115,21 @@
             <Project Name="Sample2_6.csd" Type="Scene3D" />
             <Project Name="tmpExportC3b.csd" Type="Scene3D" />
           </Folder>
+          <Folder Name="Sample2_7">
+            <Folder Name="c3b">
+              <Folder Name="table">
+                <Image Name="green_table.jpg" />
+                <Mesh Name="table.c3b" />
+              </Folder>
+              <Folder Name="wall">
+                <Mesh Name="wall.c3b" />
+                <Image Name="wall.jpg" />
+              </Folder>
+            </Folder>
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="Sample2_7.csd" Type="Scene3D" />
+            <Project Name="tmpExportC3b.csd" Type="Scene3D" />
+          </Folder>
         </Folder>
       </RootFolder>
     </Group>
