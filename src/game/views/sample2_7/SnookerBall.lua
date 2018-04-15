@@ -7,7 +7,7 @@ SnookerBall.vz = 0
 
 function SnookerBall:ctor(index)
     self.snooker = cc.Sprite3D:create("Game/Sample2_7/snooker/ball.obj", string.format("Game/Sample2_7/snooker/snooker%d.jpg",index))
-    self.ballShadow = cc.Sprite3D:create("Game/Sample2_7/snooker/ballShadow.obj","Game/Sample2_7/snooker/ballShadow.obj")
+    self.ballShadow = cc.Sprite3D:create("Game/Sample2_7/snooker/ballShadow.obj","Game/Sample2_7/snooker/ballShadow.png")
     self:addChild(self.snooker)
     self:addChild(self.ballShadow)
     self.ballShadow:setPosition3D(cc.vec3(0,-29.9+index*0.01 + 0.13,0))
