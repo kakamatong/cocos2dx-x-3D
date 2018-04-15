@@ -366,4 +366,10 @@ function ToolUtils.num2ChineseNum(num)
     end 
 end 
 
+function ToolUtils.pos3DLength(pos1, pos2)
+    local l = (pos1.x - pos2.x) * (pos1.x - pos2.x) + (pos1.y - pos2.y) * (pos1.y - pos2.y) + (pos1.z - pos2.z) * (pos1.z - pos2.z)
+    local length = math.sqrt(l)
+    return length 
+end
+
 return ToolUtils

@@ -9,4 +9,8 @@ Constant.TABLE_SIZE_X = 600
 Constant.TABLE_SIZE_Z = 300
 Constant.snookerList = {}
 
+Constant.collisionCalculate = function (snooker1, snooker2)
+    
+end
+
 return Constant

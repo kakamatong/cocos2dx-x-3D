@@ -18,7 +18,24 @@ function SnookerBall:ctor(index)
 end
 
 function SnookerBall:go()
+    local vTotal = math.sqrt( self.vx * self.vx + self.vz * self.vz )
+    if vTotal == 0 then
+        return 
+    end
 
+    local xOffset = self:getPositionX()
+    local zOffset = self:getPositionZ()
+
+    local tempX = xOffset
+    local tempZ = zOffset
+
+    xOffset = xOffset + self.vx * self.Constant.TIME_SPAN
+    zOffset = zOffset + self.vz * self.Constant.TIME_SPAN
+
+    self:setPositionX(xOffset)
+    self:setPositionZ(zOffset)
+
+    local flag = false
 end
 
 return  SnookerBall
