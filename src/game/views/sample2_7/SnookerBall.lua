@@ -4,8 +4,11 @@ SnookerBall.snooker = nil
 SnookerBall.ballShadow = nil
 SnookerBall.vx = 0
 SnookerBall.vz = 0
+SnookerBall.Constant = import(".Constant")
+SnookerBall.index = 0
 
 function SnookerBall:ctor(index)
+    self.index = index
     self.snooker = cc.Sprite3D:create("Game/Sample2_7/snooker/ball.obj", string.format("Game/Sample2_7/snooker/snooker%d.jpg",index))
     self.ballShadow = cc.Sprite3D:create("Game/Sample2_7/snooker/ballShadow.obj","Game/Sample2_7/snooker/ballShadow.png")
     self:addChild(self.snooker)

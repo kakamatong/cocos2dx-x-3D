@@ -7,10 +7,7 @@ Sample2_7.KK_BTN_CLOSE = "KK_BTN_CLOSE"
 Sample2_7.KK_CAMERA = "KK_CAMERA"
 
 Sample2_7.snooker = import(".SnookerBall")
-
-Sample2_7.snookerList = {
-
-}
+Sample2_7.Constant = import(".Constant")
 
 function Sample2_7:onCreate()
     print("onCreate")
@@ -26,10 +23,29 @@ function Sample2_7:onCreate()
         self.camera:lookAt(cc.vec3(0,0,0), cc.vec3(0,1,0))
     end
 
-    local snooker1 = self.snooker:create(1)
-    snooker1:setCameraMask(cc.CameraFlag.USER1)
-    table.insert(self.snookerList, snooker1)
-    self.resourceNode_:addChild(snooker1)
+    local snooker0 = self.snooker:create(0)
+    snooker0:setPosition3D(cc.vec3(-300,0,0))
+    snooker0:setCameraMask(cc.CameraFlag.USER1)
+    table.insert(self.Constant.snookerList, snooker0)
+    self.resourceNode_:addChild(snooker0)
+
+    for i = 1, 6 do
+        local j = 0
+        local k = 0
+        local l = i % 6 + 1
+        while i > k do
+            j = j + 1
+            k = (1 + j) * j / 2
+        end
+
+        k = i % j
+        local tmpSnooker = self.snooker:create(l)
+        tmpSnooker:setGlobalZOrder(0.1 * i - 1)
+        tmpSnooker:setPosition3D(cc.vec3(100 + 54 * j,0,-31 * (j - 1) + 62 * k))
+        tmpSnooker:setCameraMask(cc.CameraFlag.USER1)
+        table.insert(self.Constant.snookerList, tmpSnooker)
+        self.resourceNode_:addChild(tmpSnooker)
+    end
 end
 
 function Sample2_7:onTouchEvent(ref, eventType)
