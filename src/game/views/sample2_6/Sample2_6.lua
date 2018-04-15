@@ -55,36 +55,36 @@ function Sample2_6:onCreate()
                 sp3d:setScale(3)
                 sp3d:setRotation3D(cc.vec3(-90,0,0))
                 sp3d:setPosition3D(cc.vec3(0,0,0))
-                sp3d:setCameraMask(2)
+                sp3d:setCameraMask(cc.CameraFlag.USER1)
             elseif string.find(v, "Hi1") then
                 sp3d:setScale(1.3)
                 sp3d:setPosition3D(cc.vec3(-120,0,200))
                 sp3d:setRotation3D(cc.vec3(0,90,0))
-                sp3d:setCameraMask(2)
+                sp3d:setCameraMask(cc.CameraFlag.USER1)
             elseif string.find(v, "Hi2") then
                 sp3d:setScale(1.3)
                 sp3d:setPosition3D(cc.vec3(120,0,200))
                 sp3d:setRotation3D(cc.vec3(0,-90,0))
-                sp3d:setCameraMask(2)
+                sp3d:setCameraMask(cc.CameraFlag.USER1)
             elseif string.find(v, "Hi3") then
                 sp3d:setScale(1.3)
                 sp3d:setPosition3D(cc.vec3(-120,0,-200))
                 sp3d:setRotation3D(cc.vec3(0,180,0))
-                sp3d:setCameraMask(2)
+                sp3d:setCameraMask(cc.CameraFlag.USER1)
             elseif string.find(v, "Hi4") then
                 sp3d:setScale(1.3)
                 sp3d:setPosition3D(cc.vec3(120,0,-200))
-                sp3d:setCameraMask(2)
+                sp3d:setCameraMask(cc.CameraFlag.USER1)
             elseif string.find(v, "Tao") then
                 sp3d:setScale(0.8)
                 sp3d:setPosition3D(cc.vec3(-200,0,0))
                 sp3d:setRotation3D(cc.vec3(0,180,0))
-                sp3d:setCameraMask(2)
+                sp3d:setCameraMask(cc.CameraFlag.USER1)
             elseif string.find(v, "guanMu") then
                 sp3d:setScale(0.8)
                 sp3d:setPosition3D(cc.vec3(200,0,-100))
                 sp3d:setRotation3D(cc.vec3(180,180,0))
-                sp3d:setCameraMask(2)
+                sp3d:setCameraMask(cc.CameraFlag.USER1)
             end
             
             self.resourceNode_:addChild(sp3d)

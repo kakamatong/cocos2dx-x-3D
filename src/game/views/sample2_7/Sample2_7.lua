@@ -6,6 +6,8 @@ Sample2_7.KK_BTN_CLOSE = "KK_BTN_CLOSE"
 
 Sample2_7.KK_CAMERA = "KK_CAMERA"
 
+Sample2_7.snooker = import(".SnookerBall")
+
 function Sample2_7:onCreate()
     print("onCreate")
 
@@ -19,6 +21,10 @@ function Sample2_7:onCreate()
     if self.camera then
         self.camera:lookAt(cc.vec3(0,0,0), cc.vec3(0,1,0))
     end
+
+    local snooker1 = self.snooker:create(1)
+    snooker1:setCameraMask(cc.CameraFlag.USER1)
+    self.resourceNode_:addChild(snooker1)
 end
 
 function Sample2_7:onTouchEvent(ref, eventType)
