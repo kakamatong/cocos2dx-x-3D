@@ -8,6 +8,10 @@ Sample2_7.KK_CAMERA = "KK_CAMERA"
 
 Sample2_7.snooker = import(".SnookerBall")
 
+Sample2_7.snookerList = {
+
+}
+
 function Sample2_7:onCreate()
     print("onCreate")
 
@@ -24,6 +28,7 @@ function Sample2_7:onCreate()
 
     local snooker1 = self.snooker:create(1)
     snooker1:setCameraMask(cc.CameraFlag.USER1)
+    table.insert(self.snookerList, snooker1)
     self.resourceNode_:addChild(snooker1)
 end
 
