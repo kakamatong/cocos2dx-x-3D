@@ -412,4 +412,19 @@ function ToolUtils.rotationToRotationQuat(rotation)
     return  quat
 end
 
+function ToolUtils.quaternionMultiply(q1, q2)
+    local newQuat = {
+        x = 0,
+        y = 0,
+        z = 0,
+        w = 0
+    }
+    newQuat.x = q1.w * q2.x + q1.x * q2.w + q1.y * q2.z - q1.z * q2.y
+    newQuat.y = q1.w * q2.y - q1.x * q2.z + q1.y * q2.w + q1.z * q2.x
+    newQuat.z = q1.w * q2.z + q1.x * q2.y - q1.y * q2.x + q1.z * q2.w
+    newQuat.w = q1.w * q2.w - q1.x * q2.x - q1.y * q2.y - q1.z * q2.z
+
+    return newQuat
+end
+
 return ToolUtils

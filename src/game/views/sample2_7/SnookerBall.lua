@@ -67,9 +67,24 @@ function SnookerBall:go()
 
         local myRotation3D = self.snooker:getRotation3D()
         local myQuaternion = ToolUtils.rotationToRotationQuat(myRotation3D)
+
+        local newQuaternion = ToolUtils.quaternionMultiply(tmpQuaternion, myQuaternion)
+        self.snooker:setRotationQuat(newQuaternion)
+        self.vx = self.vx * self.Constant.V_TENUATION
+        self.vz = self.vz * self.Constant.V_TENUATION
+    else
+        xOffset = tempX
+        zOffset = tempZ
     end
 
+    if vTotal < self.Constant.V_THRESHOLD then
+        self.vx = 0
+        self.vz = 0
+        return 
+    end
 
+    self:setPositionX(xOffset)
+    self:setPositionZ(zOffset)
 end
 
 return  SnookerBall
