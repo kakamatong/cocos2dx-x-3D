@@ -65,7 +65,8 @@ function SnookerBall:go()
 
         local tmpQuaternion = cc.quaternion_createFromAxisAngle(tmpAxis,tmpAngrad)
 
-        local myQuaternion = self.snooker:getRotationQuat()
+        local myRotation3D = self.snooker:getRotation3D()
+        local myQuaternion = ToolUtils.rotationToRotationQuat(myRotation3D)
     end
 
 

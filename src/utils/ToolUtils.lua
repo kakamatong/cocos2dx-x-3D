@@ -380,4 +380,36 @@ function ToolUtils.posAngle(pos1, pos2)
     return math.atan(tmp + 2e-37, cc.vec3dot(pos1, pos2))
 end
 
+function ToolUtils.degreesToRadians(angle)
+    return angle * (math.pi / 180)
+end
+
+function ToolUtils.radiansToDegrees(angle)
+    return angle * (math.pi * 180)
+end
+
+function ToolUtils.rotationToRotationQuat(rotation)
+    local quat = {
+        x = 0,
+        y = 0,
+        z = 0,
+        w = 0
+    }
+    local halfRadx = ToolUtils.degreesToRadians(rotation.x / 2)
+    local halfRady = ToolUtils.degreesToRadians(rotation.y / 2)
+    local halfRadz = -ToolUtils.degreesToRadians(rotation.z / 2)
+    local coshalfRadx = math.cos(halfRadx)
+    local sinhalfRadx = math.sin(halfRadx)
+    local coshalfRady = math.cos(halfRady)
+    local sinhalfRady = math.sin(halfRady)
+    local coshalfRadz = math.cos(halfRadz)
+    local sinhalfRadz = math.sin(halfRadz)
+    quat.x = sinhalfRadx * coshalfRady * coshalfRadz - coshalfRadx * sinhalfRady * sinhalfRadz
+    quat.y = coshalfRadx * sinhalfRady * coshalfRadz + sinhalfRadx * coshalfRady * sinhalfRadz
+    quat.z = coshalfRadx * coshalfRady * sinhalfRadz - sinhalfRadx * sinhalfRady * coshalfRadz
+    quat.w = coshalfRadx * coshalfRady * coshalfRadz + sinhalfRadx * sinhalfRady * sinhalfRadz
+
+    return  quat
+end
+
 return ToolUtils
