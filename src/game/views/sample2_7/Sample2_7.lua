@@ -16,6 +16,9 @@ function Sample2_7:onCreate()
     if layer2d then
         self.resourceNode_:addChild(layer2d)
         UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BTN_CLOSE, handler(self, self.onTouchEvent))
+
+        local sche = cc.Director:getInstance():getScheduler()
+        self.scheID = sche:scheduleScriptFunc(handler(self, self.updateFrame), 0, false)
     end
 
     self.camera = UIUtils.findNodeByName(self.resourceNode_, self.KK_CAMERA)
@@ -23,9 +26,11 @@ function Sample2_7:onCreate()
         self.camera:lookAt(cc.vec3(0,0,0), cc.vec3(0,1,0))
     end
 
-    local snooker0 = self.snooker:create(0)
+    local snooker0 = self.snooker:create(1)
     snooker0:setPosition3D(cc.vec3(-300,0,0))
     snooker0:setCameraMask(cc.CameraFlag.USER1)
+    snooker0.vx = 800
+    snooker0.vz = 200
     table.insert(self.Constant.snookerList, snooker0)
     self.resourceNode_:addChild(snooker0)
 
@@ -74,6 +79,20 @@ function Sample2_7:onBtnClose()
         defaultSceneName = "LobbyScene",
     }
     require("lobby.LobbyApp"):create(configs):run()
+end
+
+function Sample2_7:updateFrame()
+    for k, v in pairs(self.Constant.snookerList) do
+        v:go()
+    end
+end
+
+function Sample2_7:onExit()
+    if self.scheID then
+        local sche = cc.Director:getInstance():getScheduler()
+        sche:unscheduleScriptEntry(self.scheID)
+        self.Constant.snookerList = {}
+    end
 end
 
 return Sample2_7
