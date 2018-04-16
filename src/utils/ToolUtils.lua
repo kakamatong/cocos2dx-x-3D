@@ -372,4 +372,12 @@ function ToolUtils.pos3DLength(pos1, pos2)
     return length 
 end
 
+function ToolUtils.posAngle(pos1, pos2)
+    local dx = pos1.y * pos2.z - pos1.z * pos2.y
+    local dy = pos1.z * pos2.x - pos1.x * pos2.z
+    local dz = pos1.x * pos2.y - pos1.y * pos2.x
+    local tmp = math.sqrt(dx * dx + dy * dy + dz * dz)
+    return math.atan(tmp + 2e-37, cc.vec3dot(pos1, pos2))
+end
+
 return ToolUtils

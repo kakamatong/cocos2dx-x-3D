@@ -36,6 +36,39 @@ function SnookerBall:go()
     self:setPositionZ(zOffset)
 
     local flag = false
+
+    for k, v in pairs(self.Constant.snookerList) do
+        if v ~= self then
+            if self.Constant.collisionCalculate(self, v) then
+                flag = true
+            end
+        end
+    end
+
+    if xOffset < -self.Constant.TABLE_SIZE_X + self.Constant.SNOOKER_R or xOffset > self.Constant.TABLE_SIZE_X - self.Constant.SNOOKER_R then
+        self.vx = -self.vx
+        flag = true
+    elseif zOffset < -self.Constant.TABLE_SIZE_Z + self.Constant.SNOOKER_R or zOffset > self.Constant.TABLE_SIZE_Z - self.Constant.SNOOKER_R then
+        self.vz = -self.vz
+        flag = true
+    end
+
+    if flag == false then
+        local distance = vTotal * self.Constant.TIME_SPAN
+        local axisXTemp = self.vz
+        local axisYTemp = 0
+        local axisZTemp = -self.vx
+
+        local tmpAxis = cc.vec3(axisXTemp,axisYTemp,axisZTemp)
+
+        local tmpAngrad = distance / self.Constant.SNOOKER_R
+
+        local tmpQuaternion = cc.quaternion_createFromAxisAngle(tmpAxis,tmpAngrad)
+
+        local myQuaternion = self.snooker:getRotationQuat()
+    end
+
+
 end
 
 return  SnookerBall
