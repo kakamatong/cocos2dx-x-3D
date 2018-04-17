@@ -21,15 +21,18 @@ Constant.collisionCalculate = function (snooker1, snooker2)
             return false
         end
 
-        local bVx = snooker2.vx
-        local bVz = snooker2.vz
+        --print("collisionCalculate", snooker1.index, snooker2.index)
+        print("L:",l)
+        local bVx = snooker2.vx * 0.8
+        local bVz = snooker2.vz * 0.8
         local vB = math.sqrt(bVx * bVx + bVz * bVz)
         local vbCollx = 0
         local vbCollz = 0
         local vbVerticalX = 0
         local vbVerticalZ = 0
         if vB > Constant.V_THRESHOLD then
-            local vbColl = vB * math.cos(ToolUtils.posAngle(cc.vec3(bVx,0,bVz),cc.vec3(BAx, 0, BAz))) 
+            local angle = cc.pGetAngle(cc.vec3(bVx,0,bVz),cc.vec3(BAx, 0, BAz))
+            local vbColl = vB * math.cos(angle) 
 
             vbCollx = (vbColl / l) * BAx
             vbCollz = (vbColl / l) * BAz
@@ -38,15 +41,17 @@ Constant.collisionCalculate = function (snooker1, snooker2)
             vbVerticalZ = bVz - vbCollz
         end
 
-        local aVx = snooker1.vx
-        local aVz = snooker1.vz
+        local aVx = snooker1.vx * 0.8
+        local aVz = snooker1.vz * 0.8
         local vA = math.sqrt(aVx * aVx + aVz* aVz)
         local vaCollx = 0
         local vaCollz = 0
         local vaVerticalX = 0
         local vaVerticalZ = 0
         if Constant.V_THRESHOLD < vA then
-            local vaColl = vA * math.cos(ToolUtils.posAngle(cc.vec3(aVx,0,aVz),cc.vec3(BAx, 0, BAz))) 
+            local angle = cc.pGetAngle(cc.vec3(aVx,0,aVz),cc.vec3(BAx, 0, BAz))
+            local vaColl = vA * math.cos(angle) 
+            --local vaColl = vA * math.cos(ToolUtils.posAngle(cc.vec3(aVx,0,aVz),cc.vec3(BAx, 0, BAz))) 
             vaCollx = (vaColl / l) * BAx
             vaCollz = (vaColl / l) * BAz
 
@@ -57,8 +62,12 @@ Constant.collisionCalculate = function (snooker1, snooker2)
         snooker1.vx = vaVerticalX + vbCollx
         snooker1.vz = vaVerticalZ + vbCollz
 
+        print("snooker1:", snooker1.vx, snooker1.vz)
+
         snooker2.vx = vbVerticalX + vaCollx
         snooker2.vz = vbVerticalZ + vaCollz
+
+        print("snooker2:", snooker2.vx, snooker2.vz)
 
         return true
     end

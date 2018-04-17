@@ -26,15 +26,16 @@ function Sample2_7:onCreate()
         self.camera:lookAt(cc.vec3(0,0,0), cc.vec3(0,1,0))
     end
 
-    local snooker0 = self.snooker:create(1)
+    local snooker0 = self.snooker:create(0)
     snooker0:setPosition3D(cc.vec3(-300,0,0))
     snooker0:setCameraMask(cc.CameraFlag.USER1)
-    snooker0.vx = 800
-    snooker0.vz = 200
+    snooker0.vx = 600
+    snooker0.vz = 0
     table.insert(self.Constant.snookerList, snooker0)
     self.resourceNode_:addChild(snooker0)
 
-    for i = 1, 6 do
+    local maxBoll = 6
+    for i = 1, maxBoll do
         local j = 0
         local k = 0
         local l = i % 6 + 1
