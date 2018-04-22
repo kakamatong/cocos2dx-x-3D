@@ -20,7 +20,7 @@
             <ForwardImage Type="Default" Path="Default/skybox.png" Plist="" />
             <BackImage Type="Default" Path="Default/skybox.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="DirectionLight" CameraFlagMode="31" Type="POINT" Flag="LIGHT3" Intensity="2.0000" Range="650.0000" ctype="Light3DObjectData">
+          <AbstractNodeData Name="DirectionLight" CameraFlagMode="31" Type="POINT" Flag="LIGHT1" Intensity="2.0000" Range="10000.0000" ctype="Light3DObjectData">
             <Size X="0.0000" Y="0.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <Position3D Y="200.0000" />
