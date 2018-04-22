@@ -130,6 +130,10 @@
             <Project Name="Sample2_7.csd" Type="Scene3D" />
             <Project Name="tmpExportC3b.csd" Type="Scene3D" />
           </Folder>
+          <Folder Name="Sample2_8">
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="Sample2_8.csd" Type="Scene3D" />
+          </Folder>
         </Folder>
       </RootFolder>
     </Group>
