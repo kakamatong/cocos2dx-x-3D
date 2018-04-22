@@ -28,6 +28,7 @@
               <Image Name="sliderProgress.png" />
             </Folder>
             <Folder Name="model">
+              <Mesh Name="boss.c3b" />
               <Mesh Name="car.c3t" />
               <Image Name="car01.png" />
               <Mesh Name="guanMu.c3t" />

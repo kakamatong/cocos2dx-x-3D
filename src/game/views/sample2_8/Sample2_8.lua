@@ -12,6 +12,11 @@ function Sample2_8:onCreate()
         self.resourceNode_:addChild(layer2d)
         UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BTN_CLOSE, handler(self, self.onTouchEvent))
     end
+
+    local userCamera = UIUtils.findNodeByName(self.resourceNode_,self.KK_CAMERA)
+    if userCamera then
+        userCamera:lookAt(cc.vec3(0,0,0), cc.vec3(0,1,0))
+    end
 end
 
 function Sample2_8:onTouchEvent(ref, eventType)

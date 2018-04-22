@@ -9,7 +9,7 @@
           <AbstractNodeData Name="KK_CAMERA" CameraFlagMode="31" Fov="60.0000" UserCameraFlagMode="USER1" CameraFlagData="1026" SkyBoxEnabled="False" SkyBoxValid="True" ctype="UserCameraObjectData">
             <Size X="0.0000" Y="0.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <Position3D Y="40.0000" Z="160.0000" />
+            <Position3D Y="20.0000" Z="60.0000" />
             <Rotation3D />
             <Scale3D X="1.0000" Y="1.0000" Z="1.0000" />
             <ClipPlane X="1.0000" Y="1000.0000" />
@@ -26,6 +26,14 @@
             <Position3D Y="80.0000" Z="50.0000" />
             <Rotation3D X="110.0000" />
             <Scale3D X="1.0000" Y="1.0000" Z="1.0000" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Sprite3D_1" ActionTag="980661364" Tag="8" CameraFlagMode="30" LightFlag="LIGHT0" ctype="Sprite3DObjectData">
+            <Size X="15.2182" Y="4.3927" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Position3D />
+            <Rotation3D X="-90.0000" />
+            <Scale3D X="1.0000" Y="1.0000" Z="1.0000" />
+            <FileData Type="Normal" Path="Game/Public/model/boss.c3b" Plist="" />
           </AbstractNodeData>
         </Children>
         <LeftImage Type="Default" Path="Default/skybox.png" Plist="" />
