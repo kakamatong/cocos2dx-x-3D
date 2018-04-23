@@ -6,6 +6,8 @@
         <Folder Name="Lobby">
           <Image Name="HelloWorld.png" />
           <Project Name="LobbyScene.csd" Type="Scene" />
+          <Image Name="normal.png" />
+          <Image Name="press.png" />
         </Folder>
       </RootFolder>
     </Group>
