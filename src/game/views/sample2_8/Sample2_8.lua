@@ -31,11 +31,15 @@ function Sample2_8:onCreate()
         local sche = cc.Director:getInstance():getScheduler()
         self.scheID = sche:scheduleScriptFunc(handler(self, self.updateFrame), 0, false)
     end
-
+    self.boss = UIUtils.findNodeByName(self.resourceNode_,self.KK_BOSS)
     self.moveTo = cc.MoveTo:create(1,cc.vec3(30,30,30))
+    self.moveTo:retain()
     self.moveBy = cc.MoveBy:create(1,cc.vec3(150,150,150))
+    self.moveBy:retain()
     self.rotateTo = cc.RotateTo:create(1,cc.vec3(0,0,120))
+    self.rotateTo:retain()
     self.rotateBy = cc.RotateBy:create(1,cc.vec3(5,5,-90))
+    self.rotateBy:retain()
 end
 
 function Sample2_8:updateFrame()
@@ -70,7 +74,26 @@ function Sample2_8:onTouchEvent(ref, eventType)
     if name == self.KK_BTN_CLOSE then
         self:onBtnClose()
     elseif name == self.KK_BTN_1 or name == self.KK_BTN_2 or name == self.KK_BTN_3 or name == self.KK_BTN_4 then
-        
+        self:onBtnAct(name)
+    end
+end
+
+function Sample2_8:onBtnAct(name)
+    if name == self.KK_BTN_1 then
+        self:runBossAct(self.moveTo)
+    elseif name == self.KK_BTN_2 then
+        self:runBossAct(self.moveBy)
+    elseif name == self.KK_BTN_3 then
+        self:runBossAct(self.rotateTo)
+    elseif name == self.KK_BTN_4 then
+        self:runBossAct(self.rotateBy)
+    end
+end
+
+function Sample2_8:runBossAct(act)
+    if self.boss then
+        self.boss:setPosition3D(cc.vec3(0,0,0))
+        self.boss:runAction(act)
     end
 end
 
