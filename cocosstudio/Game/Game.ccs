@@ -135,6 +135,13 @@
             <Project Name="My2DLayer.csd" Type="Layer" />
             <Project Name="Sample2_8.csd" Type="Scene3D" />
           </Folder>
+          <Folder Name="Sample2_9">
+            <Folder Name="c3b">
+              <Mesh Name="ch.c3b" />
+            </Folder>
+            <Project Name="My2DLayer.csd" Type="Layer" />
+            <Project Name="Sample2_9.csd" Type="Scene3D" />
+          </Folder>
         </Folder>
       </RootFolder>
     </Group>
