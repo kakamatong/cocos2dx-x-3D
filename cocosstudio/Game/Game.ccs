@@ -146,6 +146,9 @@
             <Folder Name="c3b">
               <Mesh Name="floor.c3b" />
             </Folder>
+            <Folder Name="image">
+              <Image Name="tree.png" />
+            </Folder>
             <Project Name="My2DLayer.csd" Type="Layer" />
             <Project Name="Sample3_1.csd" Type="Scene3D" />
           </Folder>

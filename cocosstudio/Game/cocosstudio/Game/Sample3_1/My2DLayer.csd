@@ -36,6 +36,16 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="Image_1" ActionTag="-72770562" Tag="10" IconVisible="False" LeftMargin="-44.6857" RightMargin="1150.6857" TopMargin="-74.2589" BottomMargin="586.2589" LeftEage="57" RightEage="57" TopEage="68" BottomEage="68" Scale9OriginX="57" Scale9OriginY="68" Scale9Width="60" Scale9Height="72" ctype="ImageViewObjectData">
+                <Size X="174.0000" Y="208.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="42.3143" Y="690.2589" />
+                <Scale ScaleX="0.3000" ScaleY="0.3000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0331" Y="0.9587" />
+                <PreSize X="0.1359" Y="0.2889" />
+                <FileData Type="Normal" Path="Game/Sample3_1/image/tree.png" Plist="" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position />

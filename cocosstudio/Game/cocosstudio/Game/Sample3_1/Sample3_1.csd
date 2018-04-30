@@ -9,7 +9,7 @@
           <AbstractNodeData Name="KK_CAMERA" CameraFlagMode="31" Fov="60.0000" UserCameraFlagMode="USER1" CameraFlagData="1026" SkyBoxEnabled="False" SkyBoxValid="True" ctype="UserCameraObjectData">
             <Size X="0.0000" Y="0.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <Position3D Y="40.0000" Z="200.0000" />
+            <Position3D Y="100.0000" Z="600.0000" />
             <Rotation3D />
             <Scale3D X="1.0000" Y="1.0000" Z="1.0000" />
             <ClipPlane X="1.0000" Y="1000.0000" />
@@ -32,7 +32,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <Position3D Y="13.0000" />
             <Rotation3D X="-90.0000" />
-            <Scale3D X="1.5000" Y="1.5000" Z="1.5000" />
+            <Scale3D X="3.0000" Y="3.0000" Z="3.0000" />
             <FileData Type="Normal" Path="Game/Sample2_9/c3b/ch.c3b" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="floor" ActionTag="-1591600983" Tag="19" CameraFlagMode="30" LightFlag="LIGHT0" ctype="Sprite3DObjectData">
@@ -41,7 +41,7 @@
             <Position3D />
             <Rotation3D X="-90.0000" />
             <Scale3D X="1.0000" Y="1.0000" Z="1.0000" />
-            <FileData Type="Normal" Path="Game/Sample3_1/c3b/floor.c3b" Plist="" />
+            <FileData Type="Default" Path="Default/empty.c3t" Plist="" />
           </AbstractNodeData>
         </Children>
         <LeftImage Type="Default" Path="Default/skybox.png" Plist="" />
