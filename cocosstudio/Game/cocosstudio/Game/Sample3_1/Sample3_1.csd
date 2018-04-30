@@ -40,8 +40,8 @@
             <CColor A="255" R="255" G="255" B="255" />
             <Position3D />
             <Rotation3D X="-90.0000" />
-            <Scale3D X="1.0000" Y="1.0000" Z="1.0000" />
-            <FileData Type="Default" Path="Default/empty.c3t" Plist="" />
+            <Scale3D X="3.0000" Y="3.0000" Z="3.0000" />
+            <FileData Type="Normal" Path="Game/Sample3_1/c3b/floor.c3b" Plist="" />
           </AbstractNodeData>
         </Children>
         <LeftImage Type="Default" Path="Default/skybox.png" Plist="" />

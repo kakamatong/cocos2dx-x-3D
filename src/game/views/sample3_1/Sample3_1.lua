@@ -29,7 +29,7 @@ function Sample3_1:onCreate()
         local tmpx = math.random(-300, 300)
         local tmpz = math.random(-300, 300)
         if tree then
-            tree:setPosition3D(cc.vec3(tmpx, 60, tmpz)) 
+            tree:setPosition3D(cc.vec3(tmpx, 70, tmpz)) 
             tree:setCameraMask(cc.CameraFlag.USER1)
             tree:setScale(0.7)
         end
