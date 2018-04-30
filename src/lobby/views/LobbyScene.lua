@@ -2,18 +2,23 @@
 local LobbyScene = class("LobbyScene", cc.load("mvc").ViewBase)
 LobbyScene.RESOURCE_FILENAME = "Lobby/LobbyScene.csb"
 
-LobbyScene.KK_SAMPLE_2_1 = "KK_SAMPLE_2_1"
-LobbyScene.KK_SAMPLE_2_2 = "KK_SAMPLE_2_2"
-LobbyScene.KK_SAMPLE_2_3 = "KK_SAMPLE_2_3"
-LobbyScene.KK_SAMPLE_2_4 = "KK_SAMPLE_2_4"
-LobbyScene.KK_SAMPLE_2_5 = "KK_SAMPLE_2_5"
-LobbyScene.KK_SAMPLE_2_6 = "KK_SAMPLE_2_6"
-LobbyScene.KK_SAMPLE_2_7 = "KK_SAMPLE_2_7"
-LobbyScene.KK_SAMPLE_2_8 = "KK_SAMPLE_2_8"
-LobbyScene.KK_SAMPLE_2_9 = "KK_SAMPLE_2_9"
 LobbyScene.KK_SAMPLE = "KK_SAMPLE_"
 
 LobbyScene.KK_BILLBOARD = "KK_BILLBOARD"
+
+LobbyScene.mainButtons = {
+    "KK_SAMPLE_2_1",
+    "KK_SAMPLE_2_2",
+    "KK_SAMPLE_2_3",
+    "KK_SAMPLE_2_4",
+    "KK_SAMPLE_2_5",
+    "KK_SAMPLE_2_6",
+    "KK_SAMPLE_2_7",
+    "KK_SAMPLE_2_8",
+    "KK_SAMPLE_2_9",
+    "KK_SAMPLE_3_1",
+    "KK_BILLBOARD"
+}
 
 function LobbyScene:onCreate()
     local img = UIUtils.findNodeByName(self.resourceNode_, "Image_1")
@@ -26,16 +31,9 @@ function LobbyScene:onCreate()
         txt:setString("3D 测试demo")
     end
 
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_1, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BILLBOARD, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_2, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_3, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_4, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_5, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_6, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_7, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_8, handler(self, self.onTouchEvent))
-    UIUtils.addTouchEventListener(self.resourceNode_, self.KK_SAMPLE_2_9, handler(self, self.onTouchEvent))
+    for k, v in pairs(self.mainButtons) do
+        UIUtils.addTouchEventListener(self.resourceNode_, v, handler(self, self.onTouchEvent))
+    end
 end
 
 function LobbyScene:onTouchEvent(ref, eventType)
