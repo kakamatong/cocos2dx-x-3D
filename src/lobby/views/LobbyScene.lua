@@ -17,6 +17,7 @@ LobbyScene.mainButtons = {
     "KK_SAMPLE_2_8",
     "KK_SAMPLE_2_9",
     "KK_SAMPLE_3_1",
+    "KK_SAMPLE_3_2",    
     "KK_BILLBOARD"
 }
 

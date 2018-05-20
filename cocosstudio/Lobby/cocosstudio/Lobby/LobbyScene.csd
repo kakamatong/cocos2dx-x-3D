@@ -195,6 +195,21 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="KK_SAMPLE_3_2" ActionTag="-1367369030" Tag="16" IconVisible="False" LeftMargin="182.8640" RightMargin="-142.8640" TopMargin="101.5859" BottomMargin="58.4141" TouchEnable="True" FontSize="20" ButtonText="Sample_3_2" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="160.0000" Y="40.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="262.8640" Y="78.4141" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="1.3143" Y="0.3921" />
+                <PreSize X="0.8000" Y="0.2000" />
+                <TextColor A="255" R="246" G="246" B="250" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Lobby/press.png" Plist="" />
+                <NormalFileData Type="Normal" Path="Lobby/normal.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
             </Children>
             <AnchorPoint />
             <Position X="0.0010" Y="516.3342" />
