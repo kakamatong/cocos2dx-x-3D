@@ -6,6 +6,6 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         //"frameworks/":true,
-        "cocosstudio/":true,
+        //"cocosstudio/":true,
     }
 }
