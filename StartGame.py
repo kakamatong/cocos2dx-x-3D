@@ -1,3 +1,4 @@
+#coding:utf-8
 import os
 
 exePath = "simulator/win32/cocos2dx_3D.exe"
