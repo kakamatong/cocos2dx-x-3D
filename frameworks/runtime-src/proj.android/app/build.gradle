@@ -6,11 +6,11 @@ android {
     compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
 
     defaultConfig {
-        applicationId "org.cocos2dx.cocos2dx_3D"
+        applicationId "com.wlj.cocos2dx3d"
         minSdkVersion PROP_MIN_SDK_VERSION
         targetSdkVersion PROP_TARGET_SDK_VERSION
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
 
         externalNativeBuild {
             if (PROP_BUILD_TYPE == 'ndk-build') {
