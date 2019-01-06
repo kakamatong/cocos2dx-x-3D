@@ -156,6 +156,7 @@ fastlane/readme.md
 *.db
 
 res/
+.vs/
 
 *.res
 *.cache
