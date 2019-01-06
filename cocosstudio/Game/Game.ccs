@@ -154,8 +154,11 @@
           </Folder>
           <Folder Name="PlaneWar">
             <Folder Name="imge">
+              <Image Name="bullet1.png" />
+              <Image Name="enemy3_n1.png" />
               <Image Name="hero1.png" />
               <Image Name="shoot_copyright.png" />
+              <PlistInfo Name="Plane.csi" Type="Plist" />
             </Folder>
             <Project Name="PlaneWar.csd" Type="Layer" />
           </Folder>

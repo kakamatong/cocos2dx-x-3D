@@ -1,0 +1,12 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plane" Type="Plist" ID="5d587039-c4c0-4207-84c4-48766bf27362" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="2" AllowRotation="True" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="Game/PlaneWar/imge/shoot_copyright.png" />
+      <FilePathData Path="Game/PlaneWar/imge/enemy3_n1.png" />
+      <FilePathData Path="Game/PlaneWar/imge/hero1.png" />
+      <FilePathData Path="Game/PlaneWar/imge/bullet1.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

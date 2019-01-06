@@ -5,7 +5,7 @@ LobbyScene.RESOURCE_FILENAME = "Lobby/LobbyScene.csb"
 LobbyScene.KK_SAMPLE = "KK_SAMPLE_"
 
 LobbyScene.KK_BILLBOARD = "KK_BILLBOARD"
-
+LobbyScene.KK_PLANEWAR = "KK_PLANEWAR"
 LobbyScene.mainButtons = {
     "KK_SAMPLE_2_1",
     "KK_SAMPLE_2_2",
@@ -18,7 +18,8 @@ LobbyScene.mainButtons = {
     "KK_SAMPLE_2_9",
     "KK_SAMPLE_3_1",
     "KK_SAMPLE_3_2",    
-    "KK_BILLBOARD"
+    "KK_BILLBOARD",
+    "KK_PLANEWAR"
 }
 
 function LobbyScene:onCreate()
@@ -53,6 +54,8 @@ function LobbyScene:onTouchEvent(ref, eventType)
     print(self.name_, "onTouchEvent", name, tag)
     if name == self.KK_BILLBOARD then
         self:onBtnBillBoard()
+    elseif name == self.KK_PLANEWAR then
+        self:onBenPlaneWar()
     elseif string.find(name,self.KK_SAMPLE) then
         local a = string.match(name,"KK_SAMPLE_(%d+)_")
         local b = string.match(name,"KK_SAMPLE_%d+_(%d+)")
@@ -66,6 +69,15 @@ function LobbyScene:onBtnBillBoard()
         viewsRoot  = "game.views.billBoard",
         modelsRoot = "game.models",
         defaultSceneName = "BillBoard",
+    }
+    require("game.GameApp"):create(configs):run()
+end
+
+function LobbyScene:onBenPlaneWar()
+    local configs = {
+        viewsRoot  = "game.views.planeWar",
+        modelsRoot = "game.models",
+        defaultSceneName = "PlaneWar",
     }
     require("game.GameApp"):create(configs):run()
 end

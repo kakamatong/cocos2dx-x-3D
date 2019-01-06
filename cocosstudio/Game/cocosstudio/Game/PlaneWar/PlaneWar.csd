@@ -17,7 +17,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.5000" />
                 <PreSize X="0.3445" Y="0.1944" />
-                <FileData Type="Normal" Path="Game/PlaneWar/imge/shoot_copyright.png" Plist="" />
+                <FileData Type="MarkedSubImage" Path="Game/PlaneWar/imge/shoot_copyright.png" Plist="Game/PlaneWar/imge/Plane.plist" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
@@ -54,7 +54,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.0875" />
             <PreSize X="0.0797" Y="0.1750" />
-            <FileData Type="Normal" Path="Game/PlaneWar/imge/hero1.png" Plist="" />
+            <FileData Type="MarkedSubImage" Path="Game/PlaneWar/imge/hero1.png" Plist="Game/PlaneWar/imge/Plane.plist" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

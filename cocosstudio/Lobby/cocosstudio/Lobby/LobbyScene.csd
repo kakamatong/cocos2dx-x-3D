@@ -60,6 +60,21 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
+              <AbstractNodeData Name="KK_PLANEWAR" ActionTag="-30315438" Tag="17" IconVisible="False" LeftMargin="914.6249" RightMargin="-874.6249" TopMargin="163.7438" BottomMargin="-3.7438" TouchEnable="True" FontSize="20" ButtonText="PlaneWar" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="160.0000" Y="40.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="994.6249" Y="16.2562" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="4.9731" Y="0.0813" />
+                <PreSize X="0.8000" Y="0.2000" />
+                <TextColor A="255" R="230" G="230" B="247" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Lobby/press.png" Plist="" />
+                <NormalFileData Type="Normal" Path="Lobby/normal.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
               <AbstractNodeData Name="KK_SAMPLE_2_2" ActionTag="769229538" Tag="8" IconVisible="False" LeftMargin="8.7815" RightMargin="31.2185" TopMargin="101.0281" BottomMargin="58.9719" TouchEnable="True" FontSize="20" ButtonText="Sample_2_2" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="50" Scale9Height="18" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="160.0000" Y="40.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
