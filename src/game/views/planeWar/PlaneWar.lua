@@ -6,12 +6,21 @@ PlaneWar.KK_PLANE = "KK_PLANE"
 PlaneWar.touchb = 0
 PlaneWar.planeWidth = 102
 PlaneWar.planeHeight = 126
-PlaneWar.launchTime = 0.15
+PlaneWar.bulletLaunchTime = 0.15
 PlaneWar.bulletInfo = {
     time = 2,
     range = 1000
 }
 PlaneWar.bullets = {}
+
+PlaneWar.enemyCreateTime = 1
+PlaneWar.enemyWidth = 169
+PlaneWar.enemyHeight = 258
+PlaneWar.enemyInfo = {
+    time = 2,
+    range = -1000
+}
+PlaneWar.enemys = {}
 function PlaneWar:onCreate()
     print("onCreate")
 
@@ -19,6 +28,7 @@ function PlaneWar:onCreate()
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_TOUCH_PNL, handler(self, self.onTouchPnl))
     self.plane = UIUtils.findNodeByName(self.resourceNode_, self.KK_PLANE)
     self:startBullet()
+    self:startEnemy()
 end
 
 function PlaneWar:onTouchEvent(ref, eventType)
@@ -90,7 +100,7 @@ end
 
 function PlaneWar:startBullet()
     local sche = cc.Director:getInstance():getScheduler()
-    self.scheID = sche:scheduleScriptFunc(handler(self, self.createBulletAndMove), self.launchTime, false)
+    self.scheID = sche:scheduleScriptFunc(handler(self, self.createBulletAndMove), self.bulletLaunchTime, false)
 end
 
 function PlaneWar:createBulletAndMove()
@@ -117,10 +127,47 @@ function PlaneWar:removeBullet(node)
     for k, v in pairs(self.bullets) do
         if v == node then
             self.bullets[k] = nil
-            v:removeFromParent()
+            node:removeFromParent()
         end
     end
+end
 
+function PlaneWar:startEnemy()
+    local sche = cc.Director:getInstance():getScheduler()
+    self.scheID1 = sche:scheduleScriptFunc(handler(self, self.createEnemyAndMove), self.enemyCreateTime, false)
+end
+
+function PlaneWar:createEnemyAndMove()
+    local enemy = ccui.ImageView:create("Game/PlaneWar/imge/enemy3_n1.png",ccui.TextureResType.plistType)
+    local winSize = cc.Director:getInstance():getWinSize()
+    local minx = self.enemyWidth / 2
+    local maxx = winSize.width - self.enemyWidth / 2
+    local x = math.random(minx, maxx)
+    local y = winSize.height + self.enemyHeight / 2
+    enemy:setPosition(cc.p(x, y + self.planeHeight / 2))
+    self:addEnemy(enemy)
+    local moveBy = cc.MoveBy:create(self.enemyInfo.time, cc.p(0,self.enemyInfo.range))
+    local callBack = cc.CallFunc:create(
+        function()
+            self:removeEnemy(enemy)
+        end
+    )
+    local seq = cc.Sequence:create(moveBy, callBack)
+    enemy:runAction(seq)
+end
+
+function PlaneWar:addEnemy(node)
+    table.insert(self.enemys, node)
+    self.resourceNode_:addChild(node)
+end
+
+function PlaneWar:removeEnemy(node)
+    for k, v in pairs(self.enemys) do
+        if v == node then
+            self.enemys[k] = nil
+            node:removeFromParent()
+        end
+    end
 end
 
 function PlaneWar:onBtnClose()
@@ -136,6 +183,10 @@ function PlaneWar:onExit()
     if self.scheID then
         local sche = cc.Director:getInstance():getScheduler()
         sche:unscheduleScriptEntry(self.scheID)
+    end
+    if self.scheID1 then
+        local sche = cc.Director:getInstance():getScheduler()
+        sche:unscheduleScriptEntry(self.scheID1)
     end
 end
 
