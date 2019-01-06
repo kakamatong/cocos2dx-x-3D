@@ -18,17 +18,19 @@ PlaneWar.enemyWidth = 169
 PlaneWar.enemyHeight = 258
 PlaneWar.enemyInfo = {
     time = 2,
-    range = -1000
+    range = -1200
 }
 PlaneWar.enemys = {}
 function PlaneWar:onCreate()
     print("onCreate")
-
+    self.bullets = {}
+    self.enemys = {}
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_BTN_CLOSE, handler(self, self.onTouchEvent))
     UIUtils.addTouchEventListener(self.resourceNode_, self.KK_TOUCH_PNL, handler(self, self.onTouchPnl))
     self.plane = UIUtils.findNodeByName(self.resourceNode_, self.KK_PLANE)
     self:startBullet()
     self:startEnemy()
+    self:startHitTest()
 end
 
 function PlaneWar:onTouchEvent(ref, eventType)
@@ -128,6 +130,7 @@ function PlaneWar:removeBullet(node)
         if v == node then
             self.bullets[k] = nil
             node:removeFromParent()
+            break
         end
     end
 end
@@ -166,6 +169,7 @@ function PlaneWar:removeEnemy(node)
         if v == node then
             self.enemys[k] = nil
             node:removeFromParent()
+            break
         end
     end
 end
@@ -179,6 +183,36 @@ function PlaneWar:onBtnClose()
     require("lobby.LobbyApp"):create(configs):run()
 end
 
+function PlaneWar:startHitTest()
+    local sche = cc.Director:getInstance():getScheduler()
+    self.scheID2 = sche:scheduleScriptFunc(handler(self, self.checkHitTest), 0, false)
+end
+
+function PlaneWar:checkHitTest()
+    for i, j in pairs(self.bullets) do
+        local x,y = j:getPosition()
+        for k, v in pairs(self.enemys) do
+            if self:hitTest(j,v) then
+                self:removeBullet(j)
+                self:removeEnemy(v)
+                break
+            end
+        end
+    end
+end
+
+function PlaneWar:hitTest(node1,node2)
+    local rect1 = self:getRect(node1)
+    local rect2 = self:getRect(node2)
+    return cc.rectIntersectsRect(rect1, rect2)
+end
+
+function PlaneWar:getRect(node)
+    local x,y = node:getPosition()
+    local size = node:getContentSize()
+    return cc.rect(x - size.width / 2,y - size.height / 2, size.width, size.height)
+end
+
 function PlaneWar:onExit()
     if self.scheID then
         local sche = cc.Director:getInstance():getScheduler()
@@ -187,6 +221,10 @@ function PlaneWar:onExit()
     if self.scheID1 then
         local sche = cc.Director:getInstance():getScheduler()
         sche:unscheduleScriptEntry(self.scheID1)
+    end
+    if self.scheID2 then
+        local sche = cc.Director:getInstance():getScheduler()
+        sche:unscheduleScriptEntry(self.scheID2)
     end
 end
 
