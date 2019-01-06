@@ -152,6 +152,13 @@
             <Project Name="My2DLayer.csd" Type="Layer" />
             <Project Name="Sample3_1.csd" Type="Scene3D" />
           </Folder>
+          <Folder Name="PlaneWar">
+            <Folder Name="imge">
+              <Image Name="hero1.png" />
+              <Image Name="shoot_copyright.png" />
+            </Folder>
+            <Project Name="PlaneWar.csd" Type="Layer" />
+          </Folder>
         </Folder>
       </RootFolder>
     </Group>
