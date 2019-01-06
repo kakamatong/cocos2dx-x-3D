@@ -58,8 +58,27 @@ end
 
 function PlaneWar:onTouchPnlMove()
     local dx = self.touchm - self.touchb
+    self:planeMove(dx)
+end
+
+function PlaneWar:checkBoundary(x)
+    local winSize = cc.Director:getInstance():getWinSize()
+    local minX = self.planeWidth / 2
+    local maxX = winSize.width - self.planeWidth / 2
+    if x < minX or x > maxX then
+        return false
+    else
+        return true
+    end
+end
+
+function PlaneWar:planeMove(dx)
     local planePrex = self.plane:getPositionX()
-    self.plane:setPositionX(planePrex + dx)
+    local nowx = planePrex + dx
+    if self:checkBoundary(nowx) then
+        self.plane:setPositionX(nowx)
+    end
+    
 end
 
 function PlaneWar:onBtnClose()
